@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergolombre - Menuiserie & Pergolas Bioclimatiques</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=112">
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <header class="navbar-wrapper">
+        <div class="navbar-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.png" alt="Pergolombre" class="logo-img">
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Menu de navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="index.html" class="nav-link">Accueil</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Accueil" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="index.html#services" class="nav-dropdown-link">Les prestations</a></li>
+                            <li><a href="index.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                            <li><a href="index.html#zone" class="nav-dropdown-link">Zones d'intervention</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="menuiserie.html" class="nav-link nav-link-active">Menuiserie</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Menuiserie" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="menuiserie.html" class="nav-dropdown-link">Pergolas</a></li>
+                            <li><a href="menuiserie.html#modeles" class="nav-dropdown-link">Services</a></li>
+                            <li><a href="menuiserie.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="electricite.html" class="nav-link">Électricité générale</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Électricité générale" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="electricite.html#depannage" class="nav-dropdown-link">Intervention rapide</a></li>
+                            <li><a href="electricite.html#options" class="nav-dropdown-link">Services</a></li>
+                            <li><a href="electricite.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="apropos.html" class="nav-link">À propos</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu À propos" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="apropos.html" class="nav-dropdown-link">À propos</a></li>
+                            <li><a href="index.html#avis" class="nav-dropdown-link">Nos avis</a></li>
+                            <li><a href="contact.html" class="nav-dropdown-link">Nous contacter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="tel:0404333434" class="nav-phone">
+                    <img src="assets/phone-icon.svg" alt="" class="phone-icon" width="20" height="20">
+                    <span class="phone-number">04 04 33 34 34</span>
+                </a>
+
+                <a href="contact.html" class="btn-contact">Contactez-nous</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pergola-hero-section">
+        <div class="pergola-hero-container">
+            <div class="pergola-hero-left">
+                <h1 class="pergola-hero-title">Spécialiste de la rénovation et de l’amélioration du confort de l’habitat
+                </h1>
+            </div>
+            <div class="pergola-hero-right">
+                <p class="pergola-hero-intro">Depuis 1956, Pergolombre accompagne les professionnels, industriels et
+                    collectivités dans leurs projets. Notre force ? Une maîtrise complète de la chaîne de valeur.</p>
+                <a href="contact.html" class="btn-pergola-cta">
+                    <span>Demander un devis gratuit</span>
+                    <svg class="cta-arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Text Section -->
+    <section class="pergola-intro-section" id="a-propos">
+        <div class="pergola-intro-container">
+            <p class="pergola-intro-text">Chez Pergolombre, nous vous accompagnons dans la création de votre espace
+                extérieur idéal en vous offrant des solutions de qualité, avec une pose soignée et un service client à
+                votre écoute.</p>
+        </div>
+    </section>
+
+    <!-- Qu'est-ce qu'une pergola bioclimatique Section -->
+    <section class="pergola-definition-section">
+        <div class="pergola-definition-container">
+            <!-- Left Red Box -->
+            <div class="pergola-card-red">
+                <h2 class="pergola-card-title">Qu'est-ce qu'une pergolas <br class="desktop-br">bioclimatique ?</h2>
+                <ul class="pergola-bullets-list">
+                    <li>Lames orientables : Ces lames en aluminium, souvent motorisées, peuvent être ajustées à la</li>
+                    <li>Protection contre les intempéries : En plus de l’orientation des lames, la pergola bioclimatique
+                        p</li>
+                    <li>Efficacité énergétique : L'orientation des lames permet de</li>
+                    <li>Esthétique et durabilité : Elle s’intègre parfaitement dans tous types d'environnements, offra
+                        nt un</li>
+                    <li>Durabilité et entretien : Les pergolas bioclimatiques sont généralement fabriquées avec des
+                        matériaux résistants aux i</li>
+                </ul>
+            </div>
+
+            <!-- Right Detail Image -->
+            <div class="pergola-image-wrapper">
+                <img src="assets/pergola-detail.png" alt="Détail pergola bioclimatique piscine"
+                    class="pergola-detail-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- L'utilite du pergolas / Les avantages Section -->
+    <section class="pergola-benefits-section">
+        <div class="benefits-label-container">
+            <span class="benefits-tag">L’UTILITE DU PERGOLAS</span>
+        </div>
+        <div class="pergola-benefits-container">
+            <!-- Left Images Gallery -->
+            <div class="benefits-gallery">
+                <img src="assets/pergola-lifestyle.png" alt="Pergola bioclimatique moderne sur terrasse"
+                    class="benefit-img-main">
+                <div class="benefit-sub-images">
+                    <img src="assets/pergola-project2.png" alt="Pergola bois dans jardin"
+                        class="benefit-img-sub sub-left">
+                    <img src="assets/pergola-project1.png" alt="Pergola salon de jardin"
+                        class="benefit-img-sub sub-right">
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="benefits-content">
+                <h2 class="benefits-heading">Les avantages de la pergola <br class="desktop-br">bioclimatique</h2>
+                <ul class="benefits-bullets-list">
+                    <li>Confort tout au long de l’année : Grâce à ses lames orientables, vous contrôlez l’ensoleillement
+                        et la ventilation pour créer l’ambiance parfaite, hiver comme été.</li>
+                    <li>Protection contre les intempéries : Pluie, vent ou chaleur intense, la pergola bioclimatique
+                        s’adapte pour vous offrir une protection efficace, tout en préservant l’esthétique de votre
+                        espace.</li>
+                    <li>Respect de l’environnement : Profitez d’une solution durable et éco-responsable, qui optimise
+                        l’usage de l’énergie et vous aide à mieux gérer votre consommation.</li>
+                </ul>
+                <div class="benefits-cta-wrap">
+                    <a href="contact.html" class="btn-benefits-cta">
+                        <span>Contactez-nous</span>
+                        <svg class="cta-arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Modèles & Configurations Section -->
+    <section class="pergola-models-section" id="modeles">
+        <div class="pergola-models-container">
+            <div class="section-header text-center">
+                <span class="section-tag section-tag-menuiserie">Nos Configurations</span>
+                <h2 class="section-title">Des modèles de pergolas adaptés à chaque architecture</h2>
+                <p class="section-subtitle">Conception sur-mesure en aluminium extrudé haute résistance avec thermolaquage certifié Qualicoat.</p>
+            </div>
+
+            <div class="models-grid">
+                <!-- Modèle 1: Adossée -->
+                <div class="model-card">
+                    <div class="model-img-wrapper">
+                        <img src="assets/pergola-detail.png" alt="Pergola Bioclimatique Adossée" class="model-img">
+                        <span class="model-badge">Configuration Murale</span>
+                    </div>
+                    <div class="model-body">
+                        <h3 class="model-title">Pergola Bioclimatique Adossée</h3>
+                        <p class="model-desc">Fixée directement sur la façade de votre maison avec 2 poteaux porteurs. Elle crée une transition fluide et élégante entre votre intérieur et votre terrasse.</p>
+                        <ul class="model-features">
+                            <li>• Idéale pour terrasses attenantes</li>
+                            <li>• Moindre emprise au sol</li>
+                            <li>• Évacuation d'eau intégrée discrètement</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Modèle 2: Autoportée -->
+                <div class="model-card">
+                    <div class="model-img-wrapper">
+                        <img src="assets/pergola-lifestyle.png" alt="Pergola Bioclimatique Autoportée" class="model-img">
+                        <span class="model-badge">Configuration Îlot</span>
+                    </div>
+                    <div class="model-body">
+                        <h3 class="model-title">Pergola Autoportée (Îlot)</h3>
+                        <p class="model-desc">Autonome sur 4 poteaux robustes, elle s'installe partout : au bord d'une piscine, au cœur d'un jardin ou sur un patio indépendant pour créer un espace de vie unique.</p>
+                        <ul class="model-features">
+                            <li>• Emplacement 100% libre au jardin ou piscine</li>
+                            <li>• Structure autoportante ultra stable</li>
+                            <li>• Idéale pour espaces détente &amp; salons extérieurs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Modèle 3: Toit de terrasse & Carport -->
+                <div class="model-card">
+                    <div class="model-img-wrapper">
+                        <img src="assets/pergola-project1.png" alt="Toit de Terrasse & Carport" class="model-img">
+                        <span class="model-badge">Protection Durable</span>
+                    </div>
+                    <div class="model-body">
+                        <h3 class="model-title">Toit de Terrasse &amp; Carport</h3>
+                        <p class="model-desc">Structure fixe en aluminium pour abriter durablement votre terrasse, vos véhicules ou une zone d'entrée des intempéries, grêle et rayons UV.</p>
+                        <ul class="model-features">
+                            <li>• Toiture fixe isolante ou polycarbonate traité</li>
+                            <li>• Protection maximale été comme hiver</li>
+                            <li>• Zéro entretien et longévité exceptionnelle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Équipements & Options de Confort Section -->
+    <section class="pergola-options-section" id="options">
+        <div class="pergola-options-container">
+            <div class="section-header text-center">
+                <span class="section-tag">Personnalisation</span>
+                <h2 class="section-title">Les options pour composer votre pergola idéale</h2>
+                <p class="section-subtitle">Chaque installation est pensée selon vos habitudes de vie et le climat de votre région.</p>
+            </div>
+
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="option-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </div>
+                    <h3 class="option-title">Lames orientables motorisées</h3>
+                    <p class="option-desc">Orientation de 0° à 135° par télécommande pour doser la lumière, ventiler naturellement ou bloquer la pluie.</p>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2v1"/><path d="M12 7a5 5 0 0 0-3 9h6a5 5 0 0 0-3-9z"/></svg>
+                    </div>
+                    <h3 class="option-title">Éclairage LED intégré</h3>
+                    <p class="option-desc">Rubans LED blanc chaud ou variateurs d'intensité directement encastrés dans les profils ou les lames pour vos soirées.</p>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg>
+                    </div>
+                    <h3 class="option-title">Capteurs vent &amp; pluie météo</h3>
+                    <p class="option-desc">Gestion automatisée : fermeture automatique des lames dès la première goutte et ouverture en cas de vent violent.</p>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/></svg>
+                    </div>
+                    <h3 class="option-title">Stores latéraux ZIP motorisés</h3>
+                    <p class="option-desc">Toiles techniques micro-aérées résistant au vent, bloquant le soleil rasant et protégeant votre intimité des regards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi choisir PERGOLOMBRE Section -->
+    <section class="why-choose-section" id="pourquoi-choisir">
+        <div class="why-choose-container">
+            <div class="section-header text-center">
+                <span class="section-tag section-tag-menuiserie">Pourquoi Nous Choisir</span>
+                <h2 class="section-title">Pourquoi confier votre projet à Pergolombre ?</h2>
+                <p class="section-subtitle">Plus de 65 ans d'exigence, de fabrication sur-mesure et d'accompagnement de proximité pour valoriser votre extérieur.</p>
+            </div>
+            
+            <div class="why-choose-grid">
+                <!-- Left Column (Reasons 1 & 2) -->
+                <div class="why-choose-col why-choose-col-left">
+                    <!-- Reason 1: Savoir-faire Artisanal -->
+                    <div class="why-feature-item">
+                        <div class="why-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                            </svg>
+                        </div>
+                        <div class="why-feature-text-wrap">
+                            <h3 class="why-feature-title">Savoir-Faire depuis 1956</h3>
+                            <h4 class="why-feature-subtitle">Une solide réputation d'artisans</h4>
+                            <p class="why-feature-text">Plus de 65 ans d'expertise dans le confort de l'habitat et la menuiserie extérieure en aluminium durable.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 2: 100% Sur-Mesure -->
+                    <div class="why-feature-item">
+                        <div class="why-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21.3 8.7 8.7 21.3c-1 1-2.5 1-3.4 0l-2.6-2.6c-1-1-1-2.5 0-3.4L15.3 2.7c1-1 2.5-1 3.4 0l2.6 2.6c1 1 1 2.4 0 3.4Z"/>
+                                <path d="m14.5 3.5 6 6"/>
+                                <path d="m11.5 6.5 3 3"/>
+                                <path d="m8.5 9.5 3 3"/>
+                                <path d="m5.5 12.5 3 3"/>
+                            </svg>
+                        </div>
+                        <div class="why-feature-text-wrap">
+                            <h3 class="why-feature-title">Conception 100% Sur-Mesure</h3>
+                            <h4 class="why-feature-subtitle">Adaptée à votre architecture</h4>
+                            <p class="why-feature-text">Étude millimétrée de votre terrasse, façade ou jardin pour une intégration harmonieuse sans compromis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Column (Worker Image Alone) -->
+                <div class="why-choose-media">
+                    <img src="assets/why_choose_worker.png" alt="Artisan Pergolombre au travail" class="why-worker-img">
+                </div>
+
+                <!-- Right Column (Reasons 3 & 4) -->
+                <div class="why-choose-col why-choose-col-right">
+                    <!-- Reason 3: Garantie Décennale -->
+                    <div class="why-feature-item">
+                        <div class="why-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="m9 12 2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <div class="why-feature-text-wrap">
+                            <h3 class="why-feature-title">Garantie Décennale 10 Ans</h3>
+                            <h4 class="why-feature-subtitle">Sérénité &amp; matériaux certifiés</h4>
+                            <p class="why-feature-text">Aluminium thermolaqué certifié Qualicoat résistant aux UV, vents violents et intempéries extrêmes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 4: Accompagnement & Devis 48h -->
+                    <div class="why-feature-item">
+                        <div class="why-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div class="why-feature-text-wrap">
+                            <h3 class="why-feature-title">Accompagnement &amp; Devis 48h</h3>
+                            <h4 class="why-feature-subtitle">Sans sous-traitance opaque</h4>
+                            <p class="why-feature-text">Interlocuteur unique dédié, étude technique gratuite et transparente avant tout engagement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Réalisations Section -->
+    <section class="menuiserie-realisations-section" id="realisations">
+        <div class="menuiserie-realisations-container">
+            <!-- Nos Réalisations Title with Red Theme Underline -->
+            <div class="realisations-header-clean">
+                <h2 class="menuiserie-realisations-title">Nos chantiers récents en menuiserie</h2>
+            </div>
+
+            <!-- 3 Genuine Pergola Project Cards -->
+            <div class="services-grid menuiserie-services-grid">
+                <!-- Project 1 -->
+                <div class="service-card project-card">
+                    <img src="assets/service-pergola.png" alt="Pergola Bioclimatique Adossée 24m²" class="card-img">
+                    <div class="project-card-body">
+                        <span class="project-tag">Menuiserie extérieure • Pose adossée</span>
+                        <h3 class="card-title">Pergola Bioclimatique Adossée 24m²</h3>
+                        <p class="card-desc">Structure aluminium gris anthracite avec lames motorisées Somfy et éclairage LED périphérique encastré sur terrasse carrelée.</p>
+                        <a href="realisation-1.html" class="card-link"><span>Voir la fiche chantier</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="service-card project-card">
+                    <img src="assets/pergola-lifestyle.png" alt="Pergola Autoportée en Îlot Jardin" class="card-img">
+                    <div class="project-card-body">
+                        <span class="project-tag">Menuiserie extérieure • Pose îlot</span>
+                        <h3 class="card-title">Pergola Autoportée en Îlot Jardin</h3>
+                        <p class="card-desc">Installation 4 poteaux avec stores verticaux micro-perforés intégrés pour salon extérieur et espace repas abrité.</p>
+                        <a href="realisation-1.html" class="card-link"><span>Voir la fiche chantier</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="service-card project-card">
+                    <img src="assets/pergola-project1.png" alt="Toit-Terrasse Aluminium Sur-Mesure" class="card-img">
+                    <div class="project-card-body">
+                        <span class="project-tag">Menuiserie extérieure • Couverture</span>
+                        <h3 class="card-title">Toit-Terrasse Aluminium Sur-Mesure</h3>
+                        <p class="card-desc">Couverture de terrasse fixe haute protection avec gestion des eaux pluviales et finition thermolaquée Qualicoat.</p>
+                        <a href="realisation-1.html" class="card-link"><span>Voir la fiche chantier</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Menuiserie Section -->
+    <section class="faq-section faq-menuiserie-section" id="faq-menuiserie">
+        <div class="faq-container">
+            <div class="section-header text-center">
+                <span class="section-tag section-tag-menuiserie">Questions Fréquentes</span>
+                <h2 class="section-title">Tout savoir sur l'installation de votre pergola</h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item" open>
+                    <summary class="faq-question">
+                        <span>Faut-il une autorisation ou un permis de construire pour une pergola ?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Pour une surface inférieure à 20 m² (ou 40 m² en zone couverte par un PLU), une simple déclaration préalable de travaux (DP) en mairie suffit. Au-delà, un permis de construire est exigé. Nous vous accompagnons et vous fournissons les plans nécessaires pour votre dossier.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Comment la pergola bioclimatique réagit-elle au vent et à la neige ?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Nos pergolas en aluminium extrudé renforcé sont testées pour résister à des vents forts jusqu'à 120 km/h. En cas de neige ou gel, il est conseillé de laisser les lames ouvertes pour éviter toute surcharge excessive sur le mécanisme.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Quel est l'entretien recommandé pour une pergola en aluminium ?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>L'aluminium thermolaqué nécessite très peu d'entretien : un nettoyage à l'eau claire avec une éponge non abrasive et un savon doux une à deux fois par an suffit. Il est également recommandé de vérifier les gouttières d'évacuation d'eau pluviale.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <!-- Top CTA Banner -->
+            <div class="footer-cta" id="contact">
+                <div class="footer-cta-text">
+                    <h2 class="footer-cta-title">Etes vous prets a realiser vos projets?</h2>
+                    <p class="footer-cta-desc">N’attendez pas et demandez un devis. C’est gratuit.</p>
+                </div>
+                <a href="contact.html" class="btn-footer-cta">Contactez-nous</a>
+            </div>
+
+            <!-- Bottom Columns Grid -->
+            <div class="footer-columns">
+
+                <!-- Col 1: Brand -->
+                <div class="footer-col footer-col-brand">
+                    <img src="assets/footer_logo.png" alt="Pergolombre" class="footer-logo">
+                    <p class="footer-brand-text">Nous continuerons toujours a batir, innover et viser le haut.</p>
+                </div>
+
+                <!-- Col 2: Entreprise -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Entreprise</h4>
+                    <ul class="footer-links">
+                        <li><a href="apropos.html">A propos</a></li>
+                        <li><a href="index.html#avis">Nos avis</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Menuiserie -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Menuiserie</h4>
+                    <ul class="footer-links">
+                        <li><a href="menuiserie.html">Pergolas</a></li>
+                        <li><a href="menuiserie.html#modeles">Services</a></li>
+                        <li><a href="menuiserie.html#realisations">Realisations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Electricite generale -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Electricite generale</h4>
+                    <ul class="footer-links">
+                        <li><a href="electricite.html#depannage">Intervention rapide</a></li>
+                        <li><a href="electricite.html#options">Services</a></li>
+                        <li><a href="electricite.html#realisations">Realisations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 5: Suivez-nous -->
+                <div class="footer-col footer-col-social">
+                    <h4 class="footer-col-title">Suivez-nous!</h4>
+                    <div class="footer-social-icons">
+                        <a href="#" aria-label="LinkedIn"><img src="assets/icon-linkedin.svg" alt="LinkedIn"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt="Instagram"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt="Facebook"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Twitter"><img src="assets/icon-twitter.svg" alt="Twitter"
+                                class="social-icon"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="main.js?v=15"></script>
+</body>
+
+</html>

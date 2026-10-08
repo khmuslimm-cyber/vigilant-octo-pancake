@@ -1,0 +1,154 @@
+- Page d'accueil (FRAME) [w:1440 h:4977] Fill:SOLID(#eaeaea)
+  - Frame 9 (FRAME) [w:1090 h:172] [Flex:VERTICAL gap:10 pad:10,10,10,10]
+    - Title (FRAME) [w:1070 h:152] [Flex:VERTICAL gap:10 pad:10,10,10,10]
+      - Case studies (TEXT) [w:589 h:16] Fill:SOLID(#e0033b) [Font:Plus Jakarta Sans 700 13px lh:16.3799991607666px] - "Les prestations"
+      - Our works describe w (TEXT) [w:589 h:96] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 36px lh:48px] - "Nos realisations nous decrivent mieux"
+  - Frame 7 (FRAME) [w:115 h:52] [Flex:HORIZONTAL gap:10 pad:10,10,10,10]
+    - Button name (TEXT) [w:95 h:32] Fill:SOLID(#e0033b) [Font:Plus Jakarta Sans 700 21px lh:32px] - "Voir plus →"
+  - Facts (FRAME) [w:1074 h:140] [Flex:HORIZONTAL gap:66 pad:0,0,0,0]
+    - 1 (FRAME) [w:314 h:140]
+      - 1M+ (TEXT) [w:119 h:58] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 48px lh:58px] - "250+"
+      - Customers visit Omeg (TEXT) [w:314 h:32] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 24px lh:32px] - "de clients satisfaits"
+    - 1 copy 2 (FRAME) [w:314 h:140]
+      - 92% (TEXT) [w:105 h:58] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 48px lh:58px] - "92%"
+      - Customers visit Omeg (TEXT) [w:314 h:32] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 24px lh:32px] - "taux de satisfaction"
+    - 1 copy 3 (FRAME) [w:314 h:140]
+      - 4.9/5.0 (TEXT) [w:174 h:58] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 48px lh:58px] - "4.9/5.0"
+      - Customers visit Omeg (TEXT) [w:314 h:64] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 24px lh:32px] - "Nos avis sur Google le  temoignent"
+  - Nos services (FRAME) [w:462 h:112] [Flex:VERTICAL gap:10 pad:0,0,0,0]
+    - Nos services (GROUP) [w:462 h:112]
+      - Our services (TEXT) [w:114 h:16] Fill:SOLID(#e0033b) [Font:Plus Jakarta Sans 700 13px lh:16.3799991607666px] - "Nos services"
+      - We provide great ser (TEXT) [w:462 h:96] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 36px lh:48px] - "Nous vous proposons des services multidimensionnels"
+  - Landing Page (FRAME) [w:1440 h:708] [Flex:VERTICAL gap:10 pad:0,0,0,0]
+    - Group 165 (GROUP) [w:1440 h:708]
+      - Rectangle 58 (VECTOR) [w:788 h:708] Fill:IMAGE
+      - Rectangle 57 (VECTOR) [w:779 h:708] Fill:IMAGE
+  - Partenariats (FRAME) [w:1440 h:124] [Flex:GRID gap:0 pad:0,0,0,0] Fill:SOLID(#e0033b)
+    - Frame 12 (FRAME) [w:223 h:36] [Flex:VERTICAL gap:10 pad:10,21,10,21]
+      - En partenariat avec: (TEXT) [w:181 h:16] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 13px lh:16.3799991607666px] - "En partenariat avec:"
+    - Partenaires (FRAME) [w:1047 h:124] [Flex:HORIZONTAL gap:191 pad:18,0,18,0]
+      - LM PNG (RECTANGLE) [w:196 h:84] Fill:IMAGE
+      - Schneider PNG (RECTANGLE) [w:210 h:84] Fill:IMAGE
+      - Legrand PNG (RECTANGLE) [w:259 h:84] Fill:IMAGE
+  - Frame 2 (INSTANCE) [w:291 h:63] radius:9 [Flex:HORIZONTAL gap:10 pad:15,18,15,18] Fill:SOLID(#e0033b)
+    - Button name (TEXT) [w:255 h:33] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 800 21px lh:33px] - "Demander un devis gratuit"
+  - mainbutton (INSTANCE) [w:151 h:53] radius:6.680412292480469 [Flex:HORIZONTAL gap:7.422680377960205 pad:11.134020805358887,17.07216453552246,11.134020805358887,17.07216453552246] Fill:SOLID(#838383)
+    - Button name (TEXT) [w:111 h:25] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 800 15.587628364562988px lh:24.494844436645508px] - "En savoir plus →"
+  - mainbutton (INSTANCE) [w:151 h:53] radius:6.680412292480469 [Flex:HORIZONTAL gap:7.422680377960205 pad:11.134020805358887,17.07216453552246,11.134020805358887,17.07216453552246] Fill:SOLID(#838383)
+    - Button name (TEXT) [w:111 h:25] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 800 15.587628364562988px lh:24.494844436645508px] - "En savoir plus →"
+  - Frame 8 (FRAME) [w:1096 h:483] [Flex:HORIZONTAL gap:44 pad:0,0,0,0]
+    - Frame 5 (INSTANCE) [w:336 h:483] radius:24 [Flex:VERTICAL gap:31 pad:27,26,33,27] Fill:SOLID(#949494)
+      - KIT-000605-main_image_web-dbc3a46bd2b04b97bd9074c045b827ff.large 2 (RECTANGLE) [w:283 h:189] radius:24 Fill:IMAGE
+      - Graphic Design (TEXT) [w:240 h:34] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 24px lh:34px] - "Electricite Generale"
+      - With lots of unique (TEXT) [w:267 h:74] Fill:SOLID(#ffffff) [Font:Work Sans 400 16px lh:19.682939529418945px] - "Une rénovation électrique permet de moderniser vos installations pour répondre aux exigences de sécurité et aux nouvelles technologies. "
+      - Button / Flat / Style 04 (FRAME) [w:119 h:32]
+        - Button 1 (FRAME) [w:119 h:32]
+          - Button name (TEXT) [w:103 h:32] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 17px lh:32px] - "En savoir plus"
+          - tail-right (GROUP) [w:12 h:10]
+            - Path (VECTOR) [w:6 h:10]
+            - Path (VECTOR) [w:11 h:2]
+    - Frame 5 (INSTANCE) [w:336 h:483] radius:24 [Flex:VERTICAL gap:31 pad:27,26,33,27] Fill:SOLID(#7a6d6e)
+      - KIT-000605-main_image_web-dbc3a46bd2b04b97bd9074c045b827ff.large 2 (RECTANGLE) [w:283 h:189] radius:24 Fill:IMAGE
+      - Graphic Design (TEXT) [w:259 h:34] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 24px lh:34px] - "Pergolat  bioclimatique"
+      - With lots of unique (TEXT) [w:267 h:74] Fill:SOLID(#ffffff) [Font:Work Sans 400 16px lh:19.682939529418945px] - "Une rénovation électrique permet de moderniser vos installations pour répondre aux exigences de sécurité et aux nouvelles technologies. "
+      - Button / Flat / Style 04 (FRAME) [w:119 h:32]
+        - Button 1 (FRAME) [w:119 h:32]
+          - Button name (TEXT) [w:103 h:32] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 17px lh:32px] - "En savoir plus"
+          - tail-right (GROUP) [w:12 h:10]
+            - Path (VECTOR) [w:6 h:10]
+            - Path (VECTOR) [w:11 h:2]
+    - Frame 6 (INSTANCE) [w:336 h:483] radius:24 [Flex:VERTICAL gap:31 pad:27,26,33,27] Fill:SOLID(#353535)
+      - KIT-000605-main_image_web-dbc3a46bd2b04b97bd9074c045b827ff.large 2 (RECTANGLE) [w:283 h:189] radius:24 Fill:IMAGE
+      - Graphic Design (TEXT) [w:240 h:34] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 24px lh:34px] - "Motorisation"
+      - With lots of unique (TEXT) [w:267 h:74] Fill:SOLID(#ffffff) [Font:Work Sans 400 16px lh:19.682939529418945px] - "Une rénovation électrique permet de moderniser vos installations pour répondre aux exigences de sécurité et aux nouvelles technologies. "
+      - Button / Flat / Style 04 (FRAME) [w:119 h:32]
+        - Button 1 (FRAME) [w:119 h:32]
+          - Button name (TEXT) [w:103 h:32] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 17px lh:32px] - "En savoir plus"
+          - tail-right (GROUP) [w:12 h:10]
+            - Path (VECTOR) [w:6 h:10]
+            - Path (VECTOR) [w:11 h:2]
+  - Titre + description (INSTANCE) [w:492 h:150] [Flex:VERTICAL gap:16 pad:0,0,0,0]
+    - Shift your business (TEXT) [w:492 h:65] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 56px lh:65px] - "Electricite generale"
+    - With lots of unique (TEXT) [w:483 h:69] Fill:SOLID(#ffffff) [Font:Work Sans 400 20px lh:23.459999084472656px] - "Conception, pose de pergolas bioclimatiques et installations électriques sécurisées conformes aux normes NF C 15-100."
+  - Titre + description (INSTANCE) [w:543 h:150] [Flex:VERTICAL gap:16 pad:0,0,0,0]
+    - Shift your business (TEXT) [w:543 h:65] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 56px lh:65px] - "Menuserie exterieure  "
+    - With lots of unique (TEXT) [w:483 h:69] Fill:SOLID(#ffffff) [Font:Work Sans 400 20px lh:23.459999084472656px] - "Conception, pose de pergolas bioclimatiques et installations électriques sécurisées conformes aux normes NF C 15-100."
+  - [NAV]--Navbar (INSTANCE) [w:1440 h:79] [Flex:HORIZONTAL gap:13 pad:13,35,13,587]
+    - Navbar (GROUP) [w:1440 h:79]
+      - NavbarBox (RECTANGLE) [w:1440 h:79] Fill:SOLID(#e0033b)
+      - Logo (RECTANGLE) [w:309 h:77] Fill:IMAGE
+    - Frame 7 (FRAME) [w:662 h:26] [Flex:HORIZONTAL gap:24 pad:0,0,0,0]
+      - Accueil (TEXT) [w:65 h:26] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 18px lh:26px] - "Accueil"
+      - Nos Services (TEXT) [w:91 h:26] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 18px lh:26px] - "Menuserie"
+      - Nos Realisations (TEXT) [w:169 h:26] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 18px lh:26px] - "Electricite generale"
+      - A propos (TEXT) [w:79 h:26] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 18px lh:26px] - "A propos"
+      - Telephone (GROUP) [w:162 h:23]
+        - Phone (INSTANCE) [w:21 h:21]
+          - Icon (VECTOR) [w:17 h:17]
+        - 04 04 33 34 34 (TEXT) [w:135 h:21] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 800 18px lh:26px] - "04 04 33 34 34 "
+    - whitebutton (INSTANCE) [w:159 h:51] radius:5 [Flex:HORIZONTAL gap:10 pad:15,18,15,18] Fill:SOLID(#ffffff)
+      - Button name (TEXT) [w:133 h:21] Fill:SOLID(#181818) [Font:Plus Jakarta Sans 800 17px lh:21.420000076293945px] - "Contactez-nous"
+  - Works (FRAME) [w:1070 h:1163] [Flex:HORIZONTAL gap:68 pad:0,0,0,0]
+    - Frame 11 (FRAME) [w:500 h:1163] [Flex:VERTICAL gap:60 pad:0,0,0,0]
+      - realisation-card (INSTANCE) [w:500 h:640] [Flex:VERTICAL gap:20 pad:0,0,0,0]
+        - Img (RECTANGLE) [w:500 h:540] radius:10 Fill:IMAGE
+        - Graphic Design (TEXT) [w:500 h:26] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 400 15px lh:26px] - "Electricite generale"
+        - Aura Branding Design (TEXT) [w:500 h:34] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 24px lh:34px] - "Pose de fenetre "
+      - realisation-card (INSTANCE) [w:500 h:463] [Flex:VERTICAL gap:20 pad:0,0,0,0]
+        - Img (RECTANGLE) [w:500 h:363] radius:10 Fill:IMAGE
+        - Graphic Design (TEXT) [w:500 h:26] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 400 15px lh:26px] - "Electricite generale"
+        - Aura Branding Design (TEXT) [w:500 h:34] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 24px lh:34px] - "Pose de fenetre "
+    - Frame 10 (FRAME) [w:502 h:1160] [Flex:VERTICAL gap:68 pad:0,0,0,0]
+      - realisation-card (INSTANCE) [w:502 h:452] [Flex:VERTICAL gap:20 pad:0,0,0,0]
+        - Img (RECTANGLE) [w:502 h:352] radius:10 Fill:IMAGE
+        - Graphic Design (TEXT) [w:502 h:26] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 400 15px lh:26px] - "Electricite generale"
+        - Aura Branding Design (TEXT) [w:502 h:34] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 24px lh:34px] - "Pose de fenetre "
+      - realisation-card (INSTANCE) [w:502 h:640] [Flex:VERTICAL gap:20 pad:0,0,0,0]
+        - Img (RECTANGLE) [w:502 h:540] radius:10 Fill:IMAGE
+        - Graphic Design (TEXT) [w:502 h:26] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 400 15px lh:26px] - "Electricite generale"
+        - Aura Branding Design (TEXT) [w:502 h:34] Fill:SOLID(#000000) [Font:Plus Jakarta Sans 700 24px lh:34px] - "Pose de fenetre "
+  - Footer (INSTANCE) [w:1440 h:728] [Flex:GRID gap:0 pad:60,110,90,110] Fill:GRADIENT_LINEAR [#e0033b@0%, #540000@100%]
+    - Frame 427318169 (FRAME) [w:1220 h:175] [Flex:HORIZONTAL gap:467 pad:0,0,0,0]
+      - Group 167 (GROUP) [w:594 h:98]
+        - With lots of unique (TEXT) [w:594 h:34] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 19px lh:32px] - "N’attendez pas et demandez un devis. C’est gratuit."
+        - Ready to launch your (TEXT) [w:566 h:44] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 700 32px lh:44px] - "Etes vous prets a realiser vos projets?"
+      - whitebutton (INSTANCE) [w:159 h:51] radius:5 [Flex:HORIZONTAL gap:10 pad:15,18,15,18] Fill:SOLID(#ffffff)
+        - Button name (TEXT) [w:133 h:21] Fill:SOLID(#181818) [Font:Plus Jakarta Sans 800 17px lh:21.420000076293945px] - "Contactez-nous"
+    - Frame 427318170 (FRAME) [w:227 h:239] [Flex:VERTICAL gap:0 pad:0,0,0,0]
+      - Logo (RECTANGLE) [w:179 h:101] Fill:IMAGE
+      - With lots of unique (TEXT) [w:251 h:52] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 15px lh:26px] - "Nous continuerons toujours a batir, innover et viser le haut."
+    - Frame 3 (FRAME) [w:203 h:265] [Flex:VERTICAL gap:12 pad:0,0,0,0]
+      - Services (TEXT) [w:91 h:26] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 15px lh:26px] - "Suivez-nous!"
+      - Social (GROUP) [w:20 h:138]
+        - logo-twitter (GROUP) [w:19 h:17]
+          - Path (VECTOR) [w:19 h:17] Fill:SOLID(#eaeaea)
+        - logo-facebook (GROUP) [w:20 h:20]
+          - Path (VECTOR) [w:20 h:20] Fill:SOLID(#eaeaea)
+        - logo-instagram (GROUP) [w:20 h:20]
+          - Shape (BOOLEAN_OPERATION) [w:20 h:20] Fill:SOLID(#eaeaea)
+            - Path (VECTOR) [w:17 h:17]
+            - Path (VECTOR) [w:20 h:20]
+          - Shape (BOOLEAN_OPERATION) [w:10 h:10] Fill:SOLID(#eaeaea)
+            - Path (VECTOR) [w:10 h:10]
+            - Path (VECTOR) [w:7 h:7]
+          - Oval (ELLIPSE) [w:3 h:3] Fill:SOLID(#eaeaea)
+        - logo-linkedin (GROUP) [w:20 h:20]
+          - Shape (BOOLEAN_OPERATION) [w:20 h:20] Fill:SOLID(#eaeaea)
+            - Path (VECTOR) [w:20 h:20]
+            - Path (VECTOR) [w:3 h:10]
+            - Path (VECTOR) [w:3 h:3]
+            - Path (VECTOR) [w:9 h:10]
+    - Nos realisations (FRAME) [w:203 h:265] [Flex:VERTICAL gap:13 pad:0,0,0,0]
+      - Services (TEXT) [w:203 h:26] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 15px lh:26px] - "Nos Realisations"
+      - Digital Marketing Co (TEXT) [w:203 h:43] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 17px lh:40px] - "La plus recente"
+      - Digital Marketing Co (TEXT) [w:203 h:43] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 17px lh:40px] - "Realisation 1"
+      - Digital Marketing Co (TEXT) [w:203 h:43] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 17px lh:40px] - "Realisation 2"
+    - Nos Services (FRAME) [w:203 h:246] [Flex:VERTICAL gap:12 pad:0,0,0,0]
+      - Product (TEXT) [w:203 h:26] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 15px lh:26px] - "Nos Services"
+      - Features Pricing New (TEXT) [w:203 h:43] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 17px lh:40px] - "Pergolas"
+      - Features Pricing New (TEXT) [w:203 h:43] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 17px lh:40px] - "Electricite"
+      - Features Pricing New (TEXT) [w:203 h:43] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 17px lh:40px] - "Motorisation"
+    - Entreprise (FRAME) [w:203 h:246] [Flex:VERTICAL gap:11 pad:0,0,0,0]
+      - Company (TEXT) [w:203 h:26] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 15px lh:26px] - "Entreprise"
+      - About us Contact us (TEXT) [w:203 h:43] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 17px lh:40px] - "A propos"
+      - About us Contact us (TEXT) [w:203 h:43] Fill:SOLID(#ffffff) [Font:Plus Jakarta Sans 400 17px lh:40px] - "Nous contacter"

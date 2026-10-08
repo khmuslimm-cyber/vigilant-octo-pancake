@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergolombre - Electricité Générale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=112">
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <header class="navbar-wrapper">
+        <div class="navbar-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.png" alt="Pergolombre" class="logo-img">
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Menu de navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="index.html" class="nav-link">Accueil</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Accueil" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="index.html#services" class="nav-dropdown-link">Les prestations</a></li>
+                            <li><a href="index.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                            <li><a href="index.html#zone" class="nav-dropdown-link">Zones d'intervention</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="menuiserie.html" class="nav-link">Menuiserie</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Menuiserie" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="menuiserie.html" class="nav-dropdown-link">Pergolas</a></li>
+                            <li><a href="menuiserie.html#modeles" class="nav-dropdown-link">Services</a></li>
+                            <li><a href="menuiserie.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="electricite.html" class="nav-link nav-link-active">Électricité générale</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Électricité générale" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="electricite.html#depannage" class="nav-dropdown-link">Intervention rapide</a></li>
+                            <li><a href="electricite.html#options" class="nav-dropdown-link">Services</a></li>
+                            <li><a href="electricite.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="apropos.html" class="nav-link">À propos</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu À propos" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="apropos.html" class="nav-dropdown-link">À propos</a></li>
+                            <li><a href="index.html#avis" class="nav-dropdown-link">Nos avis</a></li>
+                            <li><a href="contact.html" class="nav-dropdown-link">Nous contacter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="tel:0404333434" class="nav-phone">
+                    <img src="assets/phone-icon.svg" alt="" class="phone-icon" width="20" height="20">
+                    <span class="phone-number">04 04 33 34 34</span>
+                </a>
+
+                <a href="contact.html" class="btn-contact">Contactez-nous</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="electricite-hero-section">
+        <div class="pergola-hero-container">
+            <div class="pergola-hero-left">
+                <h1 class="pergola-hero-title">Spécialiste de l’électricité générale et de la mise en conformité</h1>
+            </div>
+            <div class="pergola-hero-right">
+                <p class="pergola-hero-intro">Depuis 1956, Pergolombre accompagne les professionnels, industriels et
+                    particuliers dans leurs projets électriques. Notre force ? Une conformité absolue aux normes NF C
+                    15-100.</p>
+                <a href="contact.html" class="btn-pergola-cta"><span>Demander un devis gratuit</span><svg
+                        class="cta-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Pôles d'Expertise (4 Feature Cards Grid) -->
+    <section class="elec-expertise-section" id="options">
+        <div class="elec-expertise-container">
+            <div class="elec-section-header elec-center">
+                <span class="elec-tag">NOS DOMAINES D'EXPERTISE</span>
+                <h2 class="elec-heading">Des solutions complètes pour tous vos besoins électriques</h2>
+            </div>
+
+            <div class="elec-cards-grid">
+                <!-- Card 1 -->
+                <div class="elec-card">
+                    <div class="elec-card-icon-wrap">
+                        <img src="assets/icon-elec-panel.svg" alt="" class="elec-card-icon">
+                    </div>
+                    <h3 class="elec-card-title">Rénovation & Mise aux Normes</h3>
+                    <p class="elec-card-desc">Remplacement de tableaux obsolètes, réfection de câblages vétustes et mise
+                        en conformité intégrale NF C 15-100.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="elec-card">
+                    <div class="elec-card-icon-wrap">
+                        <img src="assets/icon-elec-light.svg" alt="" class="elec-card-icon">
+                    </div>
+                    <h3 class="elec-card-title">Éclairage & Mise en Valeur</h3>
+                    <p class="elec-card-desc">Conception d'éclairages intérieurs et extérieurs, spots LED basse
+                        consommation et ambiances lumineuses sur-mesure.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="elec-card">
+                    <div class="elec-card-icon-wrap">
+                        <img src="assets/icon-elec-shield.svg" alt="" class="elec-card-icon">
+                    </div>
+                    <h3 class="elec-card-title">Sécurité & Protection</h3>
+                    <p class="elec-card-desc">Disjoncteurs différentiels haute sensibilité, mise à la terre rigoureuse
+                        et protection anti-surtension certifiée.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="elec-card">
+                    <div class="elec-card-icon-wrap">
+                        <img src="assets/icon-elec-smart.svg" alt="" class="elec-card-icon">
+                    </div>
+                    <h3 class="elec-card-title">Domotique & Énergie</h3>
+                    <p class="elec-card-desc">Pilotage intelligent à distance, gestion thermique connectée et
+                        installation de bornes de recharge pour véhicules électriques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 2. Section Norme & Conformité (Split Image + Checklist) -->
+    <section class="elec-conformite-section">
+        <div class="elec-conformite-container">
+            <!-- Left Image -->
+            <div class="elec-conformite-image-wrap">
+                <img src="assets/electricite-detail.jpg" alt="Tableau électrique certifié NF C 15-100"
+                    class="elec-conformite-img">
+            </div>
+
+            <!-- Right Content -->
+            <div class="elec-conformite-content">
+                <span class="elec-tag">CONFORMITÉ & SÉCURITÉ</span>
+                <h2 class="elec-heading">Pourquoi la mise en conformité est-elle indispensable ?</h2>
+                <div class="elec-checklist">
+                    <div class="elec-check-item">
+                        <span class="elec-check-bullet">•</span>
+                        <div class="elec-check-text">
+                            <strong>Protection des personnes et des biens :</strong> Éliminer tout danger
+                            d'électrocution, d'échauffement de ligne et d'incendie grâce à un appareillage moderne.
+                        </div>
+                    </div>
+
+                    <div class="elec-check-item">
+                        <span class="elec-check-bullet">•</span>
+                        <div class="elec-check-text">
+                            <strong>Validation légale et valorisation :</strong> Une attestation Consuel indispensable
+                            lors de la vente ou location de votre bien et exigée par vos assurances.
+                        </div>
+                    </div>
+
+                    <div class="elec-check-item">
+                        <span class="elec-check-bullet">•</span>
+                        <div class="elec-check-text">
+                            <strong>Alimentation stable et durable :</strong> Préparer votre réseau aux usages de demain
+                            en évitant les disjonctions intempestives et les baisses de tension.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="elec-btn-wrap">
+                    <a href="contact.html" class="btn-benefits-cta">
+                        <span>Contactez-nous</span>
+                        <svg class="cta-arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Dépannage & Diagnostic Rapide -->
+    <section class="elec-emergency-section" id="depannage">
+        <div class="elec-emergency-container">
+            <div class="emergency-card">
+                <div class="emergency-badge">Intervention Réactive</div>
+                <h3 class="emergency-title">Une panne électrique ou un besoin de diagnostic urgent ?</h3>
+                <p class="emergency-desc">Disjoncteur qui saute de manière inexpliquée, coupure partielle, échauffement
+                    anormal ou odeur de brûlé : nos électriciens diagnostiquent rapidement la source du problème et
+                    sécurisent votre installation dans les règles de l'art.</p>
+
+                <div class="emergency-features">
+                    <div class="emergency-feat-item">
+                        <strong>✓ Diagnostic précis</strong>
+                        <span>Recherche de fuite et mesure de terre</span>
+                    </div>
+                    <div class="emergency-feat-item">
+                        <strong>✓ Sécurisation immédiate</strong>
+                        <span>Élimination du risque d'électrisation ou d'incendie</span>
+                    </div>
+                    <div class="emergency-feat-item">
+                        <strong>✓ Devis clair avant réparation</strong>
+                        <span>Tarification transparente sans surprise</span>
+                    </div>
+                </div>
+
+                <div class="emergency-actions">
+                    <a href="tel:0404333434" class="btn-emergency-phone">
+                        <img src="assets/phone-icon.svg" alt="" width="20" height="20">
+                        <span class="emergency-phone-text">
+                            <span class="emergency-phone-label">Appelez le</span>
+                            <span class="emergency-phone-digits">04 04 33 34 34</span>
+                        </span>
+                    </a>
+                    <a href="contact.html" class="btn-emergency-contact">Demander un diagnostic en ligne</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Méthode - Notre manière de travailler -->
+    <section class="elec-process-section" id="methode">
+        <div class="elec-process-container">
+            <div class="elec-process-card-box">
+                <div class="elec-workflow-header elec-center">
+                    <span class="elec-tag">NOTRE MÉTHODE</span>
+                    <h2 class="elec-workflow-title">Notre manière de travailler</h2>
+                </div>
+
+                <div class="elec-workflow-wrapper">
+                    <svg class="elec-workflow-svg" viewBox="0 0 980 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Start Dot & Lead-in line -->
+                        <circle cx="28" cy="135" r="7" fill="#CE0033" />
+                        <line x1="35" y1="135" x2="65" y2="135" stroke="#CE0033" stroke-width="2.6" />
+
+                        <!-- Step 1: Up Circular Arch (x: 65 to 225) -->
+                        <path d="M 65 135 A 80 80 0 0 1 225 125" stroke="#CE0033" stroke-width="2.6" fill="none" />
+                        <!-- Down Arrow 1 (ends at x:225, y:127) -->
+                        <path d="M 217 117 L 225 127 L 233 117" stroke="#CE0033" stroke-width="2.6"
+                            stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+                        <!-- Step 2: Down Circular Scoop (x: 225 to 385, starts at y:143) -->
+                        <path d="M 225 143 A 80 80 0 0 0 385 143" stroke="#CE0033" stroke-width="2.6" fill="none" />
+                        <!-- Up Arrow 2 (ends at x:385, y:143) -->
+                        <path d="M 377 153 L 385 143 L 393 153" stroke="#CE0033" stroke-width="2.6"
+                            stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+                        <!-- Step 3: Up Circular Arch (x: 385 to 545, starts at y:127) -->
+                        <path d="M 385 127 A 80 80 0 0 1 545 125" stroke="#CE0033" stroke-width="2.6" fill="none" />
+                        <!-- Down Arrow 3 (ends at x:545, y:127) -->
+                        <path d="M 537 117 L 545 127 L 553 117" stroke="#CE0033" stroke-width="2.6"
+                            stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+                        <!-- Step 4: Down Circular Scoop (x: 545 to 705, starts at y:143) -->
+                        <path d="M 545 143 A 80 80 0 0 0 705 143" stroke="#CE0033" stroke-width="2.6" fill="none" />
+                        <!-- Up Arrow 4 (ends at x:705, y:143) -->
+                        <path d="M 697 153 L 705 143 L 713 153" stroke="#CE0033" stroke-width="2.6"
+                            stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+                        <!-- Step 5: Up Circular Arch (x: 705 to 865, starts at y:127) -->
+                        <path d="M 705 127 A 80 80 0 0 1 865 135" stroke="#CE0033" stroke-width="2.6" fill="none" />
+                        <!-- Exit line & right arrow -->
+                        <line x1="865" y1="135" x2="920" y2="135" stroke="#CE0033" stroke-width="2.6" />
+                        <path d="M 909 127 L 920 135 L 909 143" stroke="#CE0033" stroke-width="2.6"
+                            stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+                        <!-- Step 1 Text -->
+                        <text x="145" y="112" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif"
+                            font-weight="700" font-size="16" fill="#111111">Écoute &amp; visite</text>
+                        <text x="145" y="133" text-anchor="middle" font-family="'Work Sans', sans-serif"
+                            font-weight="400" font-size="13" fill="#444444">Recueil des</text>
+                        <text x="145" y="150" text-anchor="middle" font-family="'Work Sans', sans-serif"
+                            font-weight="400" font-size="13" fill="#444444">besoins sur site</text>
+
+                        <!-- Step 2 Text -->
+                        <text x="305" y="112" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif"
+                            font-weight="700" font-size="16" fill="#111111">Conseil &amp; devis</text>
+                        <text x="305" y="133" text-anchor="middle" font-family="'Work Sans', sans-serif"
+                            font-weight="400" font-size="13" fill="#444444">Proposition claire</text>
+                        <text x="305" y="150" text-anchor="middle" font-family="'Work Sans', sans-serif"
+                            font-weight="400" font-size="13" fill="#444444">et détaillée</text>
+
+                        <!-- Step 3 Text -->
+                        <text x="465" y="112" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif"
+                            font-weight="700" font-size="16" fill="#111111">Organisation</text>
+                        <text x="465" y="133" text-anchor="middle" font-family="'Work Sans', sans-serif"
+                            font-weight="400" font-size="13" fill="#444444">Planification du</text>
+                        <text x="465" y="150" text-anchor="middle" font-family="'Work Sans', sans-serif"
+                            font-weight="400" font-size="13" fill="#444444">chantier</text>
+
+                        <!-- Step 4 Text -->
+                        <text x="625" y="112" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif"
+                            font-weight="700" font-size="16" fill="#111111">Installation</text>
+                        <text x="625" y="133" text-anchor="middle" font-family="'Work Sans', sans-serif"
+                            font-weight="400" font-size="13" fill="#444444">Travail soigné et</text>
+                        <text x="625" y="150" text-anchor="middle" font-family="'Work Sans', sans-serif"
+                            font-weight="400" font-size="13" fill="#444444">professionnel</text>
+
+                        <!-- Step 5 Text -->
+                        <text x="785" y="112" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif"
+                            font-weight="700" font-size="16" fill="#111111">Contrôles &amp; RDV</text>
+                        <text x="785" y="133" text-anchor="middle" font-family="'Work Sans', sans-serif"
+                            font-weight="400" font-size="13" fill="#444444">Vérifications et</text>
+                        <text x="785" y="150" text-anchor="middle" font-family="'Work Sans', sans-serif"
+                            font-weight="400" font-size="13" fill="#444444">explications client</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Réalisations Section -->
+    <section class="menuiserie-realisations-section" id="realisations">
+        <div class="menuiserie-realisations-container">
+            <!-- Nos Réalisations Title with Red Theme Underline -->
+            <div class="realisations-header-clean">
+                <h2 class="menuiserie-realisations-title">Nos chantiers en électricité</h2>
+            </div>
+
+            <!-- 3 Genuine Electrical Project Cards -->
+            <div class="services-grid menuiserie-services-grid">
+                <!-- Project 1 -->
+                <div class="service-card project-card">
+                    <img src="assets/service-electricite.png" alt="Rénovation intégrale de tableau électrique"
+                        class="card-img">
+                    <div class="project-card-body">
+                        <span class="project-tag project-tag-elec">Électricité générale • Tableau modulaire</span>
+                        <h3 class="card-title">Rénovation de tableau électrique</h3>
+                        <p class="card-desc">Remplacement d'un ancien tableau à fusibles par un coffret modulaire
+                            Legrand avec disjoncteurs différentiels 30mA et parafoudre.</p>
+                        <a href="realisation-1.html" class="card-link"><span>Voir la fiche chantier</span><svg
+                                class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="service-card project-card">
+                    <img src="assets/electricite-detail.jpg" alt="Mise en sécurité logement et Consuel"
+                        class="card-img">
+                    <div class="project-card-body">
+                        <span class="project-tag project-tag-elec">Électricité générale • Sécurité NF C 15-100</span>
+                        <h3 class="card-title">Mise aux normes et conformité Consuel</h3>
+                        <p class="card-desc">Réfection globale des circuits prises/éclairage dans une maison des années
+                            70, création d'une prise de terre et délivrance de l'attestation légale.</p>
+                        <a href="realisation-1.html" class="card-link"><span>Voir la fiche chantier</span><svg
+                                class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="service-card project-card">
+                    <img src="assets/service-motorisation.png" alt="Installation borne de recharge IRVE"
+                        class="card-img">
+                    <div class="project-card-body">
+                        <span class="project-tag project-tag-elec">Électricité générale • Mobilité électrique</span>
+                        <h3 class="card-title">Installation borne de recharge IRVE</h3>
+                        <p class="card-desc">Pose d'une borne de recharge murale 7.4 kW avec ligne d'alimentation dédiée
+                            protégée par disjoncteur différentiel type F.</p>
+                        <a href="realisation-1.html" class="card-link"><span>Voir la fiche chantier</span><svg
+                                class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Électricité Section -->
+    <section class="faq-section faq-elec-section" id="faq-electricite">
+        <div class="faq-container">
+            <div class="section-header text-center">
+                <span class="elec-tag">Questions Fréquentes</span>
+                <h2 class="elec-heading">Vos questions sur vos travaux électriques</h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item" open>
+                    <summary class="faq-question">
+                        <span>Qu'est-ce que l'attestation Consuel et est-elle obligatoire ?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>L'attestation Consuel certifie que votre installation électrique respecte rigoureusement la
+                            norme de sécurité NF C 15-100. Elle est légalement obligatoire lors d'un raccordement neuf
+                            par Enedis et fortement recommandée lors d'une rénovation lourde pour être couvert par votre
+                            assurance habitation.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Comment savoir si mon tableau électrique est dangereux ou obsolète ?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Plusieurs indices doivent vous alerter : présence de fusibles en porcelaine ou à fil de
+                            plomb, absence d'interrupteur différentiel 30 mA pour protéger les personnes, disjonctions
+                            fréquentes, odeur de chaud ou absence de prise de terre dans les pièces humides.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Quelles sont les conditions pour poser une borne de recharge à domicile ?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>L'installation d'une borne de recharge (Wallbox) requiert une ligne dédiée tirée directement
+                            depuis le tableau électrique avec ses propres protections (différentiel et disjoncteur
+                            adaptés). Nous vérifions au préalable la puissance de votre abonnement électrique pour
+                            dimensionner la charge en toute sécurité.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <!-- Top CTA Banner -->
+            <div class="footer-cta" id="contact">
+                <div class="footer-cta-text">
+                    <h2 class="footer-cta-title">Etes vous prets a realiser vos projets?</h2>
+                    <p class="footer-cta-desc">N’attendez pas et demandez un devis. C’est gratuit.</p>
+                </div>
+                <a href="contact.html" class="btn-footer-cta">Contactez-nous</a>
+            </div>
+
+            <!-- Bottom Columns Grid -->
+            <div class="footer-columns">
+
+                <!-- Col 1: Brand -->
+                <div class="footer-col footer-col-brand">
+                    <img src="assets/footer_logo.png" alt="Pergolombre" class="footer-logo">
+                    <p class="footer-brand-text">Nous continuerons toujours a batir, innover et viser le haut.</p>
+                </div>
+
+                <!-- Col 2: Entreprise -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Entreprise</h4>
+                    <ul class="footer-links">
+                        <li><a href="apropos.html">A propos</a></li>
+                        <li><a href="index.html#avis">Nos avis</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Menuiserie -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Menuiserie</h4>
+                    <ul class="footer-links">
+                        <li><a href="menuiserie.html">Pergolas</a></li>
+                        <li><a href="menuiserie.html#modeles">Services</a></li>
+                        <li><a href="menuiserie.html#realisations">Realisations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Electricite generale -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Electricite generale</h4>
+                    <ul class="footer-links">
+                        <li><a href="electricite.html#depannage">Intervention rapide</a></li>
+                        <li><a href="electricite.html#options">Services</a></li>
+                        <li><a href="electricite.html#realisations">Realisations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 5: Suivez-nous -->
+                <div class="footer-col footer-col-social">
+                    <h4 class="footer-col-title">Suivez-nous!</h4>
+                    <div class="footer-social-icons">
+                        <a href="#" aria-label="LinkedIn"><img src="assets/icon-linkedin.svg" alt="LinkedIn"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt="Instagram"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt="Facebook"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Twitter"><img src="assets/icon-twitter.svg" alt="Twitter"
+                                class="social-icon"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="main.js?v=15"></script>
+</body>
+
+</html>

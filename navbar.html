@@ -1,0 +1,81 @@
+<!-- Reusable Navbar Component (Pergolombre) -->
+<header class="navbar-wrapper">
+    <div class="navbar-container">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="Pergolombre" class="logo-img">
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Menu de navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
+            <ul class="nav-links">
+                <li class="nav-item nav-item-has-dropdown">
+                    <div class="nav-item-header">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                        <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Accueil" aria-expanded="false">
+                            <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                    </div>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="index.html#services" class="nav-dropdown-link">Les prestations</a></li>
+                        <li><a href="index.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                        <li><a href="index.html#zone" class="nav-dropdown-link">Zones d'intervention</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-dropdown">
+                    <div class="nav-item-header">
+                        <a href="menuiserie.html" class="nav-link">Menuiserie</a>
+                        <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Menuiserie" aria-expanded="false">
+                            <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                    </div>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="menuiserie.html" class="nav-dropdown-link">Pergolas</a></li>
+                        <li><a href="menuiserie.html#modeles" class="nav-dropdown-link">Services</a></li>
+                        <li><a href="menuiserie.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-dropdown">
+                    <div class="nav-item-header">
+                        <a href="electricite.html" class="nav-link">Électricité générale</a>
+                        <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Électricité générale" aria-expanded="false">
+                            <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                    </div>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="electricite.html#depannage" class="nav-dropdown-link">Intervention rapide</a></li>
+                        <li><a href="electricite.html#options" class="nav-dropdown-link">Services</a></li>
+                        <li><a href="electricite.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-dropdown">
+                    <div class="nav-item-header">
+                        <a href="apropos.html" class="nav-link">À propos</a>
+                        <button type="button" class="nav-arrow-btn" aria-label="Sous-menu À propos" aria-expanded="false">
+                            <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                    </div>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="apropos.html" class="nav-dropdown-link">À propos</a></li>
+                        <li><a href="index.html#avis" class="nav-dropdown-link">Nos avis</a></li>
+                        <li><a href="contact.html" class="nav-dropdown-link">Nous contacter</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <a href="tel:0404333434" class="nav-phone">
+                <img src="assets/phone-icon.svg" alt="" class="phone-icon" width="20" height="20">
+                <span class="phone-number">04 04 33 34 34</span>
+            </a>
+
+            <a href="contact.html" class="btn-contact">Contactez-nous</a>
+        </nav>
+    </div>
+</header>

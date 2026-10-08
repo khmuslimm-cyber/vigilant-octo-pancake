@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergolombre - Pose de Toit-terrasse (Réalisation 1)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=112">
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <header class="navbar-wrapper">
+        <div class="navbar-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.png" alt="Pergolombre" class="logo-img">
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Menu de navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="index.html" class="nav-link">Accueil</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Accueil" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="index.html#services" class="nav-dropdown-link">Les prestations</a></li>
+                            <li><a href="index.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                            <li><a href="index.html#zone" class="nav-dropdown-link">Zones d'intervention</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="menuiserie.html" class="nav-link">Menuiserie</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Menuiserie" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="menuiserie.html" class="nav-dropdown-link">Pergolas</a></li>
+                            <li><a href="menuiserie.html#modeles" class="nav-dropdown-link">Services</a></li>
+                            <li><a href="menuiserie.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="electricite.html" class="nav-link">Électricité générale</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Électricité générale" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="electricite.html#depannage" class="nav-dropdown-link">Intervention rapide</a></li>
+                            <li><a href="electricite.html#options" class="nav-dropdown-link">Services</a></li>
+                            <li><a href="electricite.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="apropos.html" class="nav-link">À propos</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu À propos" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="apropos.html" class="nav-dropdown-link">À propos</a></li>
+                            <li><a href="index.html#avis" class="nav-dropdown-link">Nos avis</a></li>
+                            <li><a href="contact.html" class="nav-dropdown-link">Nous contacter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="tel:0404333434" class="nav-phone">
+                    <img src="assets/phone-icon.svg" alt="" class="phone-icon" width="20" height="20">
+                    <span class="phone-number">04 04 33 34 34</span>
+                </a>
+
+                <a href="contact.html" class="btn-contact">Contactez-nous</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero-section">
+        <div class="portfolio-hero-overlay"></div>
+        <div class="portfolio-hero-container">
+            <!-- Breadcrumb -->
+            <nav class="portfolio-breadcrumb" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a>
+                <span class="breadcrumb-separator">&gt;</span>
+                <a href="menuiserie.html">Menuserie</a>
+                <span class="breadcrumb-separator">&gt;</span>
+                <span class="breadcrumb-current">Realisation 1</span>
+            </nav>
+
+            <div class="portfolio-hero-grid">
+                <!-- Left Details -->
+                <div class="portfolio-hero-left">
+                    <h1 class="portfolio-hero-title">Pose de Toit-terrasse</h1>
+                    <h2 class="portfolio-hero-subtitle">Details du projet : </h2>
+                    <p class="portfolio-hero-desc">Installation d’une pergola bioclimatique adossée pour offrir un espace extérieur confortable et moderne. Avec ses lames orientables, cette pergola permet de réguler l’ensoleillement et la ventilation en fonction des besoins.</p>
+                    <p class="portfolio-hero-desc">Intégrée à la façade de la maison, elle crée une extension élégante tout en protégeant des intempéries. Idéale pour prolonger vos moments de détente, elle allie fonctionnalité et design.</p>
+                </div>
+
+                <!-- Right Tech Specs Card -->
+                <div class="portfolio-tech-card">
+                    <h3 class="tech-card-title">Details techniques</h3>
+                    <ul class="tech-specs-list">
+                        <li class="tech-item"><span class="tech-label">Lieu:</span> <span class="tech-value">Saint-Etienne</span></li>
+                        <li class="tech-item"><span class="tech-label">duree de travail:</span> <span class="tech-value">6 semaines</span></li>
+                        <li class="tech-item"><span class="tech-label">date de livraison:</span> <span class="tech-value">24 juin 2025</span></li>
+                        <li class="tech-item"><span class="tech-label">nature du projet:</span> <span class="tech-value">Menuserie exterieure</span></li>
+                        <li class="tech-item"><span class="tech-label">montant:</span> <span class="tech-value">6 200e</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Les Etapes Section -->
+    <section class="portfolio-etapes-section">
+        <div class="portfolio-etapes-container">
+            <h2 class="etapes-main-title">Les étapes</h2>
+
+            <div class="timeline">
+                <!-- Etape 1 — text left, image right -->
+                <div class="timeline-step timeline-step--left">
+                    <div class="timeline-content">
+                        <h3 class="timeline-step-title">Préparation du chantier</h3>
+                        <p class="timeline-step-desc">Installation d'une pergola bioclimatique adossée pour offrir un espace extérieur confortable et moderne. Avec ses lames orientables, cette pergola permet de réguler l'ensoleillement et la ventilation en fonction des besoins.</p>
+                        <p class="timeline-step-desc">Prise de mesures, vérification de la structure porteuse et mise en place des protections de chantier avant le début des travaux.</p>
+                    </div>
+                    <div class="timeline-marker">
+                        <span class="timeline-number">1</span>
+                    </div>
+                    <div class="timeline-media">
+                        <img src="assets/portfolio-etape1.jpg" alt="Etape 1 - Préparation du chantier" class="timeline-img">
+                    </div>
+                </div>
+
+                <!-- Etape 2 — image left, text right -->
+                <div class="timeline-step timeline-step--right">
+                    <div class="timeline-media">
+                        <img src="assets/portfolio-gal-2.jpg" alt="Etape 2 - Installation de la structure" class="timeline-img">
+                    </div>
+                    <div class="timeline-marker">
+                        <span class="timeline-number">2</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-step-title">Installation de la structure</h3>
+                        <p class="timeline-step-desc">Montage de la structure principale en aluminium, fixation des poteaux porteurs et installation du cadre supérieur. Chaque élément est vérifié au niveau pour garantir un résultat impeccable.</p>
+                        <p class="timeline-step-desc">Les lames orientables sont ensuite positionnées et connectées au système de motorisation pour un contrôle optimal de la lumière et de la ventilation.</p>
+                    </div>
+                </div>
+
+                <!-- Etape 3 — text left, image right -->
+                <div class="timeline-step timeline-step--left">
+                    <div class="timeline-content">
+                        <h3 class="timeline-step-title">Finitions & livraison</h3>
+                        <p class="timeline-step-desc">Réglages finaux de la motorisation, tests d'étanchéité et nettoyage complet du chantier. Vérification du bon fonctionnement de l'ensemble avant la remise des clés au client.</p>
+                        <p class="timeline-step-desc">Le projet est livré clé en main avec une démonstration complète du fonctionnement et un guide d'entretien personnalisé.</p>
+                    </div>
+                    <div class="timeline-marker">
+                        <span class="timeline-number">3</span>
+                    </div>
+                    <div class="timeline-media">
+                        <img src="assets/portfolio-etape3.jpg" alt="Etape 3 - Finitions et livraison" class="timeline-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Avant / Apres Section — Interactive Slider -->
+    <section class="portfolio-before-after-section">
+        <div class="portfolio-etapes-container">
+            <div class="ba-slider-wrapper" id="baSlider">
+                <!-- After image (base layer) -->
+                <img src="assets/portfolio-etape1.jpg" alt="Après les travaux" class="ba-after-img">
+
+                <!-- Before image (overlay, clipped) -->
+                <div class="ba-before-wrap" id="baBeforeWrap">
+                    <img src="assets/portfolio-avant.jpg" alt="Avant les travaux" class="ba-before-img">
+                </div>
+
+                <!-- Slider line -->
+                <div class="ba-slider-line" id="baSliderLine"></div>
+
+                <!-- Drag handle -->
+                <div class="ba-slider-handle" id="baSliderHandle">
+                    <span class="ba-slider-arrows">◀ ▶</span>
+                </div>
+
+                <!-- Labels -->
+                <span class="ba-label ba-label--avant">Avant</span>
+                <span class="ba-label ba-label--apres">Après</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- La Galerie Section -->
+    <section class="portfolio-galerie-section" id="galerie">
+        <div class="portfolio-etapes-container">
+            <!-- Stepped Red Decorative Line & Title -->
+            <div class="realisations-decorative-header">
+                <div class="decorative-line-box">
+                    <img src="assets/line-galerie.svg" alt="" class="decorative-line-img">
+                </div>
+                <h2 class="menuiserie-realisations-title">La Galerie</h2>
+            </div>
+
+            <!-- 8 Image Gallery Grid -->
+            <div class="galerie-grid">
+                <div class="galerie-item" data-index="0" role="button" tabindex="0" aria-label="Agrandir la photo 1">
+                    <img src="assets/portfolio-gal-1.jpg" alt="Galerie 1">
+                    <div class="galerie-item-overlay">
+                        <div class="galerie-zoom-badge">🔍</div>
+                    </div>
+                </div>
+                <div class="galerie-item" data-index="1" role="button" tabindex="0" aria-label="Agrandir la photo 2">
+                    <img src="assets/portfolio-gal-2.jpg" alt="Galerie 2">
+                    <div class="galerie-item-overlay">
+                        <div class="galerie-zoom-badge">🔍</div>
+                    </div>
+                </div>
+                <div class="galerie-item" data-index="2" role="button" tabindex="0" aria-label="Agrandir la photo 3">
+                    <img src="assets/portfolio-gal-3.jpg" alt="Galerie 3">
+                    <div class="galerie-item-overlay">
+                        <div class="galerie-zoom-badge">🔍</div>
+                    </div>
+                </div>
+                <div class="galerie-item" data-index="3" role="button" tabindex="0" aria-label="Agrandir la photo 4">
+                    <img src="assets/portfolio-gal-4.jpg" alt="Galerie 4">
+                    <div class="galerie-item-overlay">
+                        <div class="galerie-zoom-badge">🔍</div>
+                    </div>
+                </div>
+                <div class="galerie-item" data-index="4" role="button" tabindex="0" aria-label="Agrandir la photo 5">
+                    <img src="assets/portfolio-gal-2.jpg" alt="Galerie 5">
+                    <div class="galerie-item-overlay">
+                        <div class="galerie-zoom-badge">🔍</div>
+                    </div>
+                </div>
+                <div class="galerie-item" data-index="5" role="button" tabindex="0" aria-label="Agrandir la photo 6">
+                    <img src="assets/portfolio-gal-3.jpg" alt="Galerie 6">
+                    <div class="galerie-item-overlay">
+                        <div class="galerie-zoom-badge">🔍</div>
+                    </div>
+                </div>
+                <div class="galerie-item" data-index="6" role="button" tabindex="0" aria-label="Agrandir la photo 7">
+                    <img src="assets/portfolio-gal-1.jpg" alt="Galerie 7">
+                    <div class="galerie-item-overlay">
+                        <div class="galerie-zoom-badge">🔍</div>
+                    </div>
+                </div>
+                <div class="galerie-item" data-index="7" role="button" tabindex="0" aria-label="Agrandir la photo 8">
+                    <img src="assets/portfolio-gal-4.jpg" alt="Galerie 8">
+                    <div class="galerie-item-overlay">
+                        <div class="galerie-zoom-badge">🔍</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal for Gallery Image Inspection -->
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog" aria-label="Visionneuse d'image">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fermer la visionneuse">&times;</button>
+        <button class="lightbox-btn lightbox-prev" id="lightboxPrev" aria-label="Image précédente">&#10094;</button>
+        <button class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Image suivante">&#10095;</button>
+        
+        <div class="lightbox-container" id="lightboxContainer">
+            <img src="" alt="Photo agrandie" class="lightbox-img" id="lightboxImg">
+        </div>
+        
+        <div class="lightbox-counter" id="lightboxCounter">1 / 8</div>
+    </div>
+
+    <!-- Projet Similaire Section -->
+    <section class="portfolio-similar-section">
+        <div class="portfolio-etapes-container">
+            <div class="similar-card">
+                <h3 class="similar-title">Un projet similaire en tete?</h3>
+                <p class="similar-desc">Que ce soit pour du neuf ou de la rénovation, nos équipes étudient votre besoin pour vous proposer la solution la plus durable.</p>
+                <a href="contact.html" class="btn-similar-cta">Discuter de mon projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autres Réalisations Section -->
+    <section class="menuiserie-realisations-section portfolio-autres-section" id="autres-realisations">
+        <div class="menuiserie-realisations-container">
+            <!-- Clean Section Title Header -->
+            <div class="realisations-header-clean">
+                <h2 class="menuiserie-realisations-title">Autres réalisations</h2>
+            </div>
+
+            <!-- 3 Service / Portfolio Cards (pasted from electricite.html Nos realisations) -->
+            <div class="services-grid menuiserie-services-grid">
+                <!-- Card 1: Electricite Generale -->
+                <div class="service-card card-electricite">
+                    <div class="service-img-wrapper">
+                        <img src="assets/service-electricite.png" alt="Electricite Generale" class="card-img">
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="card-title">Electricite Generale</h3>
+                        <p class="card-desc">Une rénovation électrique permet de moderniser vos installations pour répondre
+                            aux exigences de sécurité et aux nouvelles technologies.</p>
+                        <a href="electricite.html" class="card-link"><span>En savoir plus</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Pergolat bioclimatique -->
+                <div class="service-card card-pergola">
+                    <div class="service-img-wrapper">
+                        <img src="assets/service-pergola.png" alt="Pergolat bioclimatique" class="card-img">
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="card-title">Pergolat bioclimatique</h3>
+                        <p class="card-desc">Une rénovation électrique permet de moderniser vos installations pour répondre
+                            aux exigences de sécurité et aux nouvelles technologies.</p>
+                        <a href="menuiserie.html" class="card-link"><span>En savoir plus</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Motorisation -->
+                <div class="service-card card-motorisation">
+                    <div class="service-img-wrapper">
+                        <img src="assets/service-motorisation.png" alt="Motorisation" class="card-img">
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="card-title">Motorisation</h3>
+                        <p class="card-desc">Une rénovation électrique permet de moderniser vos installations pour répondre
+                            aux exigences de sécurité et aux nouvelles technologies.</p>
+                        <a href="#" class="card-link"><span>En savoir plus</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <!-- Top CTA Banner -->
+            <div class="footer-cta" id="contact">
+                <div class="footer-cta-text">
+                    <h2 class="footer-cta-title">Etes vous prets a realiser vos projets?</h2>
+                    <p class="footer-cta-desc">N’attendez pas et demandez un devis. C’est gratuit.</p>
+                </div>
+                <a href="contact.html" class="btn-footer-cta">Contactez-nous</a>
+            </div>
+
+            <!-- Bottom Columns Grid -->
+            <div class="footer-columns">
+
+                <!-- Col 1: Brand -->
+                <div class="footer-col footer-col-brand">
+                    <img src="assets/footer_logo.png" alt="Pergolombre" class="footer-logo">
+                    <p class="footer-brand-text">Nous continuerons toujours a batir, innover et viser le haut.</p>
+                </div>
+
+                <!-- Col 2: Entreprise -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Entreprise</h4>
+                    <ul class="footer-links">
+                        <li><a href="apropos.html">A propos</a></li>
+                        <li><a href="index.html#avis">Nos avis</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Menuiserie -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Menuiserie</h4>
+                    <ul class="footer-links">
+                        <li><a href="menuiserie.html">Pergolas</a></li>
+                        <li><a href="menuiserie.html#modeles">Services</a></li>
+                        <li><a href="menuiserie.html#realisations">Realisations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Electricite generale -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Electricite generale</h4>
+                    <ul class="footer-links">
+                        <li><a href="electricite.html#depannage">Intervention rapide</a></li>
+                        <li><a href="electricite.html#options">Services</a></li>
+                        <li><a href="electricite.html#realisations">Realisations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 5: Suivez-nous -->
+                <div class="footer-col footer-col-social">
+                    <h4 class="footer-col-title">Suivez-nous!</h4>
+                    <div class="footer-social-icons">
+                        <a href="#" aria-label="LinkedIn"><img src="assets/icon-linkedin.svg" alt="LinkedIn"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt="Instagram"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt="Facebook"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Twitter"><img src="assets/icon-twitter.svg" alt="Twitter"
+                                class="social-icon"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Interactive Lightbox Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const galleryItems = document.querySelectorAll('.galerie-item');
+            const lightbox = document.getElementById('lightboxModal');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxCounter = document.getElementById('lightboxCounter');
+            const btnClose = document.getElementById('lightboxClose');
+            const btnPrev = document.getElementById('lightboxPrev');
+            const btnNext = document.getElementById('lightboxNext');
+
+            const images = Array.from(galleryItems).map(item => {
+                const img = item.querySelector('img');
+                return {
+                    src: img.src,
+                    alt: img.alt || 'Photo galerie'
+                };
+            });
+
+            let currentIndex = 0;
+
+            function showImage(index) {
+                if (index < 0) {
+                    index = images.length - 1;
+                } else if (index >= images.length) {
+                    index = 0;
+                }
+                currentIndex = index;
+                lightboxImg.src = images[currentIndex].src;
+                lightboxImg.alt = images[currentIndex].alt;
+                lightboxCounter.textContent = `${currentIndex + 1} / ${images.length}`;
+            }
+
+            function openLightbox(index) {
+                showImage(index);
+                lightbox.classList.add('active');
+                lightbox.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                lightbox.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const idx = parseInt(item.getAttribute('data-index'), 10) || 0;
+                    openLightbox(idx);
+                });
+                item.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        const idx = parseInt(item.getAttribute('data-index'), 10) || 0;
+                        openLightbox(idx);
+                    }
+                });
+            });
+
+            btnPrev.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showImage(currentIndex - 1);
+            });
+
+            btnNext.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showImage(currentIndex + 1);
+            });
+
+            btnClose.addEventListener('click', (e) => {
+                e.stopPropagation();
+                closeLightbox();
+            });
+
+            // Close on background click
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox || e.target.id === 'lightboxContainer') {
+                    closeLightbox();
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                } else if (e.key === 'ArrowLeft') {
+                    showImage(currentIndex - 1);
+                } else if (e.key === 'ArrowRight') {
+                    showImage(currentIndex + 1);
+                }
+            });
+        });
+    </script>
+
+    <!-- Before / After Interactive Slider Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slider = document.getElementById('baSlider');
+            if (!slider) return;
+
+            const beforeWrap = document.getElementById('baBeforeWrap');
+            const sliderLine = document.getElementById('baSliderLine');
+            const sliderHandle = document.getElementById('baSliderHandle');
+
+            let isDragging = false;
+
+            function updateSlider(x) {
+                const rect = slider.getBoundingClientRect();
+                let pos = (x - rect.left) / rect.width;
+                pos = Math.max(0, Math.min(1, pos));
+                const pct = pos * 100;
+
+                // Clip the before image: show from left edge to the slider position
+                beforeWrap.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+
+                // Move the line and handle
+                sliderLine.style.left = pct + '%';
+                sliderHandle.style.left = pct + '%';
+            }
+
+            // Mouse events
+            slider.addEventListener('mousedown', (e) => {
+                e.preventDefault();
+                isDragging = true;
+                updateSlider(e.clientX);
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                updateSlider(e.clientX);
+            });
+
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+
+            // Touch events
+            slider.addEventListener('touchstart', (e) => {
+                isDragging = true;
+                updateSlider(e.touches[0].clientX);
+            }, { passive: true });
+
+            document.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                updateSlider(e.touches[0].clientX);
+            }, { passive: true });
+
+            document.addEventListener('touchend', () => {
+                isDragging = false;
+            });
+        });
+    </script>
+
+    <script src="main.js?v=15"></script>
+</body>
+
+</html>

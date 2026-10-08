@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergolombre - Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=112">
+</head>
+
+<body>
+    <header class="navbar-wrapper">
+        <div class="navbar-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.png" alt="Pergolombre" class="logo-img">
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Menu de navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="index.html" class="nav-link nav-link-active">Accueil</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Accueil" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="index.html#services" class="nav-dropdown-link">Les prestations</a></li>
+                            <li><a href="index.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                            <li><a href="index.html#zone" class="nav-dropdown-link">Zones d'intervention</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="menuiserie.html" class="nav-link">Menuiserie</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Menuiserie" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="menuiserie.html" class="nav-dropdown-link">Pergolas</a></li>
+                            <li><a href="menuiserie.html#modeles" class="nav-dropdown-link">Services</a></li>
+                            <li><a href="menuiserie.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="electricite.html" class="nav-link">Électricité générale</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu Électricité générale" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="electricite.html#depannage" class="nav-dropdown-link">Intervention rapide</a></li>
+                            <li><a href="electricite.html#options" class="nav-dropdown-link">Services</a></li>
+                            <li><a href="electricite.html#realisations" class="nav-dropdown-link">Realisations</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item nav-item-has-dropdown">
+                        <div class="nav-item-header">
+                            <a href="apropos.html" class="nav-link">À propos</a>
+                            <button type="button" class="nav-arrow-btn" aria-label="Sous-menu À propos" aria-expanded="false">
+                                <svg class="nav-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="apropos.html" class="nav-dropdown-link">À propos</a></li>
+                            <li><a href="index.html#avis" class="nav-dropdown-link">Nos avis</a></li>
+                            <li><a href="contact.html" class="nav-dropdown-link">Nous contacter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="tel:0404333434" class="nav-phone">
+                    <img src="assets/phone-icon.svg" alt="" class="phone-icon" width="20" height="20">
+                    <span class="phone-number">04 04 33 34 34</span>
+                </a>
+
+                <a href="contact.html" class="btn-contact">Contactez-nous</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+
+        <!-- Background Image (Group 165) -->
+        <div class="hero-background"></div>
+
+        <div class="hero-container">
+            <!-- Foreground Content Layer -->
+            <div class="hero-content">
+
+                <!-- Left Block -->
+                <div class="hero-block block-left">
+                    <h1 class="hero-title">Menuserie exterieure </h1>
+                    <p class="hero-desc">Conception, pose de pergolas bioclimatiques et installations électriques
+                        sécurisées conformes aux normes NF C 15-100.</p>
+                </div>
+                <a href="menuiserie.html" class="btn btn-outline btn-left">
+                    <span>En savoir plus</span>
+                    <svg class="cta-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+
+                <!-- Right Block -->
+                <div class="hero-block block-right">
+                    <h1 class="hero-title">Electricite generale</h1>
+                    <p class="hero-desc">Conception, pose de pergolas bioclimatiques et installations électriques
+                        sécurisées conformes aux normes NF C 15-100.</p>
+                </div>
+                <a href="electricite.html" class="btn btn-outline btn-right">
+                    <span>En savoir plus</span>
+                    <svg class="cta-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+
+                <!-- Center Button -->
+                <a href="contact.html" class="btn btn-primary btn-center">Demander un devis gratuit</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Guarantees Bar (Construction Reassurance - Infinite Slide) -->
+    <section class="guarantees-bar" aria-label="Engagements et garanties">
+        <div class="guarantees-track">
+            <!-- Group 1 -->
+            <div class="guarantees-group">
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Garantie Décennale 10 Ans</strong>
+                        <span class="guarantee-subtitle">Menuiserie &amp; Électricité assurées</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Norme NF C 15-100</strong>
+                        <span class="guarantee-subtitle">Attestation &amp; validation Consuel</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Devis Gratuit sous 48h</strong>
+                        <span class="guarantee-subtitle">Étude technique sans engagement</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Artisans Qualifiés</strong>
+                        <span class="guarantee-subtitle">Savoir-faire et pose soignée</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 2 (Duplicate for seamless loop) -->
+            <div class="guarantees-group" aria-hidden="true">
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Garantie Décennale 10 Ans</strong>
+                        <span class="guarantee-subtitle">Menuiserie &amp; Électricité assurées</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Norme NF C 15-100</strong>
+                        <span class="guarantee-subtitle">Attestation &amp; validation Consuel</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Devis Gratuit sous 48h</strong>
+                        <span class="guarantee-subtitle">Étude technique sans engagement</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Artisans Qualifiés</strong>
+                        <span class="guarantee-subtitle">Savoir-faire et pose soignée</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 3 (Duplicate for wide screens) -->
+            <div class="guarantees-group" aria-hidden="true">
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Garantie Décennale 10 Ans</strong>
+                        <span class="guarantee-subtitle">Menuiserie &amp; Électricité assurées</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Norme NF C 15-100</strong>
+                        <span class="guarantee-subtitle">Attestation &amp; validation Consuel</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Devis Gratuit sous 48h</strong>
+                        <span class="guarantee-subtitle">Étude technique sans engagement</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Artisans Qualifiés</strong>
+                        <span class="guarantee-subtitle">Savoir-faire et pose soignée</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 4 (Duplicate for wide screens) -->
+            <div class="guarantees-group" aria-hidden="true">
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Garantie Décennale 10 Ans</strong>
+                        <span class="guarantee-subtitle">Menuiserie &amp; Électricité assurées</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Norme NF C 15-100</strong>
+                        <span class="guarantee-subtitle">Attestation &amp; validation Consuel</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Devis Gratuit sous 48h</strong>
+                        <span class="guarantee-subtitle">Étude technique sans engagement</span>
+                    </div>
+                </div>
+
+                <div class="guarantee-item">
+                    <div class="guarantee-icon-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <div class="guarantee-content">
+                        <strong class="guarantee-title">Artisans Qualifiés</strong>
+                        <span class="guarantee-subtitle">Savoir-faire et pose soignée</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Services & Facts Section -->
+    <section class="services-section" id="services">
+        <div class="services-container">
+
+            <!-- Section Header -->
+            <div class="section-header text-center">
+                <span class="section-tag">Nos Prestations</span>
+                <h2 class="section-title">Nous vous proposons des services multidimensionnels</h2>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="services-grid">
+                <!-- Card 1: Electricite Generale -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="assets/service-electricite.png" alt="Électricité Générale" class="card-img">
+                        <span class="service-badge">Électricité</span>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="card-title">Électricité Générale</h3>
+                        <p class="card-desc">Une rénovation électrique permet de moderniser vos installations pour
+                            répondre aux exigences de sécurité et aux nouvelles technologies.</p>
+                        <a href="electricite.html" class="card-link"><span>En savoir plus</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Pergolat bioclimatique -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="assets/service-pergola.png" alt="Pergolat bioclimatique" class="card-img">
+                        <span class="service-badge">Menuiserie</span>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="card-title">Pergolat bioclimatique</h3>
+                        <p class="card-desc">Une rénovation électrique permet de moderniser vos installations pour
+                            répondre aux exigences de sécurité et aux nouvelles technologies.</p>
+                        <a href="menuiserie.html" class="card-link"><span>En savoir plus</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Motorisation -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="assets/service-motorisation.png" alt="Motorisation" class="card-img">
+                        <span class="service-badge">Automatismes</span>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="card-title">Motorisation</h3>
+                        <p class="card-desc">Une rénovation électrique permet de moderniser vos installations pour
+                            répondre aux exigences de sécurité et aux nouvelles technologies.</p>
+                        <a href="menuiserie.html#options" class="card-link"><span>En savoir plus</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <!-- Card 4 (Duplicate 1): Electricite Generale -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="assets/service-electricite.png" alt="Électricité Générale" class="card-img">
+                        <span class="service-badge">Électricité</span>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="card-title">Électricité Générale</h3>
+                        <p class="card-desc">Une rénovation électrique permet de moderniser vos installations pour
+                            répondre aux exigences de sécurité et aux nouvelles technologies.</p>
+                        <a href="electricite.html" class="card-link"><span>En savoir plus</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <!-- Card 5 (Duplicate 2): Pergolat bioclimatique -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="assets/service-pergola.png" alt="Pergolat bioclimatique" class="card-img">
+                        <span class="service-badge">Menuiserie</span>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="card-title">Pergolat bioclimatique</h3>
+                        <p class="card-desc">Une rénovation électrique permet de moderniser vos installations pour
+                            répondre aux exigences de sécurité et aux nouvelles technologies.</p>
+                        <a href="menuiserie.html" class="card-link"><span>En savoir plus</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <!-- Card 6 (Duplicate 3): Motorisation -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="assets/service-motorisation.png" alt="Motorisation" class="card-img">
+                        <span class="service-badge">Automatismes</span>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="card-title">Motorisation</h3>
+                        <p class="card-desc">Une rénovation électrique permet de moderniser vos installations pour
+                            répondre aux exigences de sécurité et aux nouvelles technologies.</p>
+                        <a href="menuiserie.html#options" class="card-link"><span>En savoir plus</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facts / Statistics -->
+            <div class="facts-container" id="a-propos">
+                <div class="fact-item">
+                    <span class="fact-number">250+</span>
+                    <span class="fact-label">de clients satisfaits</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">92%</span>
+                    <span class="fact-label">taux de satisfaction</span>
+                </div>
+                <div class="fact-item">
+                    <span class="fact-number">4.9/5.0</span>
+                    <span class="fact-stars">★★★★★</span>
+                    <span class="fact-label">Nos avis sur Google le<br>temoignent</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Processus en 4 Etapes -->
+    <section class="process-section" id="processus">
+        <div class="process-container">
+            <div class="section-header text-center">
+                <span class="section-tag">Notre Méthode</span>
+                <h2 class="section-title">Votre projet en 4 étapes simples et transparentes</h2>
+            </div>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">01</div>
+                    <h3 class="process-title">Étude &amp; Diagnostic</h3>
+                    <p class="process-desc">Analyse sur place de vos besoins en électricité ou menuiserie extérieure
+                        pour une solution personnalisée.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">02</div>
+                    <h3 class="process-title">Devis Sur-Mesure</h3>
+                    <p class="process-desc">Chiffrage précis et détaillé fourni sous 48h, totalement gratuit et sans
+                        engagement.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">03</div>
+                    <h3 class="process-title">Pose &amp; Installation</h3>
+                    <p class="process-desc">Intervention par nos artisans qualifiés dans le respect strict des normes de
+                        sécurité et NF C 15-100.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">04</div>
+                    <h3 class="process-title">Réception &amp; Garanties</h3>
+                    <p class="process-desc">Contrôle qualité, attestation Consuel / Garantie décennale et accompagnement
+                        post-chantier.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section (Placed between Notre Méthode and Nos Réalisations) -->
+    <section class="partners-section">
+        <div class="partners-container">
+            <span class="partners-label">Nos partenaires : </span>
+            <div class="partners-logos">
+                <img src="assets/partner_logo_1.svg" alt="Legrand" class="partner-logo partner-logo-legrand" width="277" height="68">
+                <img src="assets/partner_logo_2.svg" alt="Somfy" class="partner-logo partner-logo-somfy" width="158" height="96">
+                <img src="assets/partner_logo_3.svg" alt="Schneider Electric" class="partner-logo partner-logo-schneider" width="259" height="76">
+            </div>
+        </div>
+    </section>
+
+    <!-- Realisations Section (Nos Réalisations - Visual Proof) -->
+    <section class="realisations-section" id="realisations">
+        <div class="realisations-container">
+
+            <!-- Section Header -->
+            <div class="section-header text-center">
+                <span class="section-tag">Nos réalisations</span>
+                <h2 class="section-title">Nos realisations nous decrivent mieux</h2>
+            </div>
+
+            <!-- Staggered 2-Column Works Grid -->
+            <div class="works-grid">
+
+                <!-- Left Column -->
+                <div class="works-col works-col-left">
+                    <div class="work-card">
+                        <img src="assets/service-pergola.png" alt="Pergola Bioclimatique Adossée 24m²"
+                            class="work-img work-img-tall">
+                        <div class="work-info">
+                            <span class="work-category">Menuiserie extérieure • Pose adossée</span>
+                            <h3 class="work-title">Pergola Bioclimatique Adossée 24m²</h3>
+                            <p class="card-desc">Structure aluminium gris anthracite avec lames motorisées Somfy et éclairage LED périphérique encastré sur terrasse carrelée.</p>
+                            <a href="realisation-1.html" class="card-link"><span>Voir la fiche chantier</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <img src="assets/pergola-lifestyle.png" alt="Pergola Autoportée en Îlot Jardin"
+                            class="work-img work-img-short-left">
+                        <div class="work-info">
+                            <span class="work-category">Menuiserie extérieure • Pose îlot</span>
+                            <h3 class="work-title">Pergola Autoportée en Îlot Jardin</h3>
+                            <p class="card-desc">Installation 4 poteaux avec stores verticaux micro-perforés intégrés pour salon extérieur et espace repas abrité.</p>
+                            <a href="realisation-1.html" class="card-link"><span>Voir la fiche chantier</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="works-col works-col-right">
+                    <div class="work-card">
+                        <img src="assets/pergola-project1.png" alt="Toit-Terrasse Aluminium Sur-Mesure"
+                            class="work-img work-img-short-right">
+                        <div class="work-info">
+                            <span class="work-category">Menuiserie extérieure • Couverture</span>
+                            <h3 class="work-title">Toit-Terrasse Aluminium Sur-Mesure</h3>
+                            <p class="card-desc">Couverture de terrasse fixe haute protection avec gestion des eaux pluviales et finition thermolaquée Qualicoat.</p>
+                            <a href="realisation-1.html" class="card-link"><span>Voir la fiche chantier</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="work-card">
+                        <img src="assets/pergola-project2.png" alt="Pergola Bois dans Jardin"
+                            class="work-img work-img-tall">
+                        <div class="work-info">
+                            <span class="work-category">Menuiserie extérieure • Bois</span>
+                            <h3 class="work-title">Pergola Bois dans Jardin</h3>
+                            <p class="card-desc">Une structure en bois noble qui s'intègre parfaitement à la végétation de votre jardin pour un style authentique.</p>
+                            <a href="realisation-1.html" class="card-link"><span>Voir la fiche chantier</span><svg class="cta-arrow-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- View More Link -->
+            <div class="works-more">
+                <a href="menuiserie.html#realisations" class="btn-more"><span>Voir plus</span><svg class="cta-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Avis Clients & Témoignages -->
+    <section class="testimonials-section" id="avis">
+        <div class="testimonials-container">
+            <div class="section-header text-center">
+                <span class="section-tag">Avis Clients</span>
+                <h2 class="section-title">Ils nous font confiance pour leurs travaux</h2>
+            </div>
+            <!-- Custom Native Google Reviews Widget (No third-party branding) -->
+            <div class="google-reviews-widget">
+                
+                <!-- Widget Top Trust Bar -->
+                <div class="gr-header-bar">
+                    <div class="gr-brand-box">
+                        <svg class="gr-google-logo" width="34" height="34" viewBox="0 0 24 24">
+                            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                        </svg>
+                        <div class="gr-score-info">
+                            <div class="gr-rating-row">
+                                <span class="gr-score-number">4.9</span>
+                                <div class="gr-stars">★★★★★</div>
+                                <span class="gr-verified-pill">Vérifié</span>
+                            </div>
+                            <span class="gr-review-count">Basé sur nos avis vérifiés Google Maps</span>
+                        </div>
+                    </div>
+
+                    <div class="gr-header-actions">
+                        <a href="https://maps.app.goo.gl/z8s1uYr6p1H6dyJA8" target="_blank" rel="noopener noreferrer" class="btn-google-review">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                            </svg>
+                            Donner un avis sur Google
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Carousel Slider Container -->
+                <div class="gr-slider-wrapper">
+                    <button class="gr-nav-btn gr-nav-prev" id="grPrevBtn" aria-label="Avis précédent">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+
+                    <div class="gr-cards-track" id="grTrack">
+                        <!-- Review 1 -->
+                        <div class="gr-card">
+                            <div class="gr-card-top">
+                                <div class="gr-user-avatar avatar-1">DD</div>
+                                <div class="gr-user-meta">
+                                    <strong class="gr-user-name">damien Damien</strong>
+                                    <span class="gr-user-badge"><span class="gr-check">✓</span> Client Vérifié • Google Maps</span>
+                                </div>
+                                <svg class="gr-card-glogo" width="22" height="22" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                                </svg>
+                            </div>
+                            <div class="gr-rating-line">
+                                <div class="gr-stars">★★★★★</div>
+                                <span class="gr-date">Il y a 3 mois</span>
+                            </div>
+                            <p class="gr-text">« Excellent électricien ! Intervention rapide, travail soigné et professionnel. Très à l’écoute, de bons conseils et chantier laissé propre après son passage. Tarifs corrects et respect des délais annoncés. Je recommande sans hésitation et je referai appel à lui si besoin. »</p>
+                            <span class="gr-verified-tag">Publié sur Google</span>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="gr-card">
+                            <div class="gr-card-top">
+                                <div class="gr-user-avatar avatar-2">FC</div>
+                                <div class="gr-user-meta">
+                                    <strong class="gr-user-name">Florence COTTA</strong>
+                                    <span class="gr-user-badge"><span class="gr-check">✓</span> Client Vérifié • Google Maps</span>
+                                </div>
+                                <svg class="gr-card-glogo" width="22" height="22" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                                </svg>
+                            </div>
+                            <div class="gr-rating-line">
+                                <div class="gr-stars">★★★★★</div>
+                                <span class="gr-date">Il y a 2 mois</span>
+                            </div>
+                            <p class="gr-text">« Excellent électricien! Très professionnel. Tarifs raisonnables, respect de ses engagements en terme de délais, qualité du travail, un chantier laissé impeccable tous les soirs, très aimable et à l’écoute des besoins de ses clients….tout est parfait! Je ne peux que le recommander. »</p>
+                            <span class="gr-verified-tag">Publié sur Google</span>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="gr-card">
+                            <div class="gr-card-top">
+                                <div class="gr-user-avatar avatar-3">AD</div>
+                                <div class="gr-user-meta">
+                                    <strong class="gr-user-name">Alycia Drk</strong>
+                                    <span class="gr-user-badge"><span class="gr-check">✓</span> Client Vérifié • Google Maps</span>
+                                </div>
+                                <svg class="gr-card-glogo" width="22" height="22" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                                </svg>
+                            </div>
+                            <div class="gr-rating-line">
+                                <div class="gr-stars">★★★★★</div>
+                                <span class="gr-date">Il y a 5 mois</span>
+                            </div>
+                            <p class="gr-text">« Artisant très serieux, très serviable, très professionnel. Nous l'avons fait intervenir pour un compteur électrique, il a bien pris le temps de nous expliquer. Intervention rapide et a l'heure. Je recommande !! »</p>
+                            <span class="gr-verified-tag">Publié sur Google</span>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="gr-card">
+                            <div class="gr-card-top">
+                                <div class="gr-user-avatar avatar-4">AS</div>
+                                <div class="gr-user-meta">
+                                    <strong class="gr-user-name">Abderr Sby</strong>
+                                    <span class="gr-user-badge"><span class="gr-check">✓</span> Client Vérifié • Google Maps</span>
+                                </div>
+                                <svg class="gr-card-glogo" width="22" height="22" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                                </svg>
+                            </div>
+                            <div class="gr-rating-line">
+                                <div class="gr-stars">★★★★★</div>
+                                <span class="gr-date">Il y a 5 mois</span>
+                            </div>
+                            <p class="gr-text">« Intervention au top ! Il est arrivé à l’heure, a rapidement identifié le problème et l’a réparé efficacement. Travail soigné, chantier propre après son passage,. Personne professionnelle et agréable. Je recommande vivement »</p>
+                            <span class="gr-verified-tag">Publié sur Google</span>
+                        </div>
+                    </div>
+
+                    <button class="gr-nav-btn gr-nav-next" id="grNextBtn" aria-label="Avis suivant">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+
+                <!-- Carousel Dots -->
+                <div class="gr-dots-container" id="grDots"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Zone d'Intervention -->
+    <section class="zone-section" id="zone">
+        <div class="zone-container">
+            <div class="section-header text-center">
+                <span class="section-tag">Zone d'Intervention</span>
+                <h2 class="section-title">Nous intervenons dans toute la région et ses agglomérations</h2>
+                <p class="section-subtitle">Déplacement sur site pour étude technique, diagnostic et prise de cotes
+                    gratuite.</p>
+            </div>
+
+            <div class="zone-grid">
+                <div class="zone-card">
+                    <div class="zone-badge">Secteur Principal</div>
+                    <h3 class="zone-city">Saint-Étienne &amp; Agglomération</h3>
+                    <p class="zone-desc">Intervention rapide pour tous vos projets de menuiserie extérieure,
+                        installation de pergolas et travaux d'électricité générale.</p>
+                    <ul class="zone-list">
+                        <li>• Saint-Étienne, Firminy, Saint-Chamond</li>
+                        <li>• Plaine du Forez, Montbrison, Andrézieux-Bouthéon</li>
+                        <li>• Ondaine et vallée du Gier</li>
+                    </ul>
+                </div>
+
+                <div class="zone-card">
+                    <div class="zone-badge">Secteur Étendu</div>
+                    <h3 class="zone-city">Grand Lyon &amp; Région Rhône-Alpes</h3>
+                    <p class="zone-desc">Prise en charge de chantiers neufs ou rénovations complètes auprès des
+                        particuliers et des professionnels.</p>
+                    <ul class="zone-list">
+                        <li>• Métropole de Lyon et première couronne</li>
+                        <li>• Ouest Lyonnais, Givors, Vienne</li>
+                        <li>• Départements limitrophes (Loire 42 &amp; Rhône 69)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="zone-footer-banner">
+                <span>Vous êtes situé dans une commune voisine ?</span>
+                <a href="contact.html" class="zone-link"><span>Vérifier la faisabilité de mon chantier</span><svg class="cta-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ Accordéon -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <div class="section-header text-center">
+                <span class="section-tag">Foire Aux Questions</span>
+                <h2 class="section-title">Vos questions les plus fréquentes</h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item" open>
+                    <summary class="faq-question">
+                        <span>Combien de temps faut-il pour recevoir un devis ?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Nous nous engageons à vous fournir un devis gratuit et détaillé sous 48h ouvrées après notre
+                            visite technique ou l'étude de votre dossier.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Vos travaux sont-ils couverts par la garantie décennale ?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Absolument. Tous nos travaux de menuiserie extérieure et d'électricité générale bénéficient
+                            d'une assurance décennale et de la conformité Consuel / NF C 15-100.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Dans quelle région intervenez-vous ?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Nous intervenons auprès des particuliers et des professionnels dans toute la région et ses
+                            agglomérations environnantes.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+
+            <!-- Top CTA Banner -->
+            <div class="footer-cta" id="contact">
+                <div class="footer-cta-text">
+                    <h2 class="footer-cta-title">Etes vous prets a realiser vos projets?</h2>
+                    <p class="footer-cta-desc">N’attendez pas et demandez un devis. C’est gratuit.</p>
+                </div>
+                <a href="contact.html" class="btn-footer-cta">Contactez-nous</a>
+            </div>
+
+            <!-- Bottom Columns Grid -->
+            <div class="footer-columns">
+
+                <!-- Col 1: Brand -->
+                <div class="footer-col footer-col-brand">
+                    <img src="assets/footer_logo.png" alt="Pergolombre" class="footer-logo">
+                    <p class="footer-brand-text">Nous continuerons toujours a batir, innover et viser le haut.</p>
+                </div>
+
+                <!-- Col 2: Entreprise -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Entreprise</h4>
+                    <ul class="footer-links">
+                        <li><a href="apropos.html">A propos</a></li>
+                        <li><a href="index.html#avis">Nos avis</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Menuiserie -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Menuiserie</h4>
+                    <ul class="footer-links">
+                        <li><a href="menuiserie.html">Pergolas</a></li>
+                        <li><a href="menuiserie.html#modeles">Services</a></li>
+                        <li><a href="menuiserie.html#realisations">Realisations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Electricite generale -->
+                <div class="footer-col footer-col-links">
+                    <h4 class="footer-col-title">Electricite generale</h4>
+                    <ul class="footer-links">
+                        <li><a href="electricite.html#depannage">Intervention rapide</a></li>
+                        <li><a href="electricite.html#options">Services</a></li>
+                        <li><a href="electricite.html#realisations">Realisations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 5: Suivez-nous -->
+                <div class="footer-col footer-col-social">
+                    <h4 class="footer-col-title">Suivez-nous!</h4>
+                    <div class="footer-social-icons">
+                        <a href="#" aria-label="LinkedIn"><img src="assets/icon-linkedin.svg" alt="LinkedIn"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt="Instagram"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt="Facebook"
+                                class="social-icon"></a>
+                        <a href="#" aria-label="Twitter"><img src="assets/icon-twitter.svg" alt="Twitter"
+                                class="social-icon"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="main.js?v=15"></script>
+</body>
+
+</html>
