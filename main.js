@@ -240,6 +240,7 @@ document.addEventListener('DOMContentLoaded', function () {
             '.footer-cta',
             '.partners-section',
             '.portfolio-etape-card',
+            '.timeline-step',
             '.galerie-item'
         ];
 

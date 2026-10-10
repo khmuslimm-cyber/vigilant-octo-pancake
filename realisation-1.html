@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=112">
+    <link rel="stylesheet" href="styles.css?v=113">
 </head>
 
 <body>
@@ -492,11 +492,21 @@
             btnPrev.addEventListener('click', (e) => {
                 e.stopPropagation();
                 showImage(currentIndex - 1);
+                btnPrev.blur();
             });
 
             btnNext.addEventListener('click', (e) => {
                 e.stopPropagation();
                 showImage(currentIndex + 1);
+                btnNext.blur();
+            });
+
+            btnPrev.addEventListener('touchend', () => {
+                setTimeout(() => btnPrev.blur(), 50);
+            });
+
+            btnNext.addEventListener('touchend', () => {
+                setTimeout(() => btnNext.blur(), 50);
             });
 
             btnClose.addEventListener('click', (e) => {
@@ -584,7 +594,7 @@
         });
     </script>
 
-    <script src="main.js?v=15"></script>
+    <script src="main.js?v=16"></script>
 </body>
 
 </html>

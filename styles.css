@@ -337,6 +337,11 @@ body {
     letter-spacing: -0.0286em;
 }
 
+/* Mobile Hero Split - Hidden on Desktop */
+.hero-mobile-split {
+    display: none;
+}
+
 /* ==========================================================================
    Partners Section (Nos partenaires - Figma Node #3591:211)
    ========================================================================== */
@@ -376,18 +381,19 @@ body {
 }
 
 .partners-logos {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    justify-content: space-between;
-    align-self: stretch;
+    justify-items: center;
     width: 100%;
-    gap: clamp(24px, 4vw, 100px);
+    gap: 20px;
 }
 
 .partner-logo {
     display: block;
     object-fit: contain;
     transition: transform 0.25s ease, opacity 0.25s ease, filter 0.25s ease;
+    filter: brightness(0.5);
 }
 
 .partner-logo:hover {
@@ -396,21 +402,21 @@ body {
 }
 
 .partner-logo-legrand {
-    width: min(277px, 32%);
-    height: auto;
-    max-height: 68px;
+    width: auto;
+    max-width: 100%;
+    max-height: 50px;
 }
 
 .partner-logo-somfy {
-    width: min(158px, 22%);
-    height: auto;
-    max-height: 96px;
+    width: auto;
+    max-width: 100%;
+    max-height: 50px;
 }
 
 .partner-logo-schneider {
-    width: min(259px, 32%);
-    height: auto;
-    max-height: 76px;
+    width: auto;
+    max-width: 100%;
+    max-height: 50px;
 }
 
 /* ==========================================================================
@@ -739,13 +745,14 @@ body {
 
 .work-category {
     font-family: var(--font-heading);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 26px;
-    letter-spacing: -0.0067em;
-    color: #000000;
-    opacity: 0.7;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    display: block;
 }
 
 .work-title {
@@ -1118,7 +1125,7 @@ body {
 .pergola-card-red {
     width: 580px;
     min-height: 702px;
-    background-color: rgba(206, 0, 51, 0.76);
+    background-color: var(--primary);
     border-radius: 57px;
     padding: 50px 45px;
     box-sizing: border-box;
@@ -2348,9 +2355,11 @@ body {
     backdrop-filter: blur(8px);
 }
 
-.lightbox-btn:hover {
-    background: rgba(206, 0, 51, 0.9);
-    transform: translateY(-50%) scale(1.08);
+@media (hover: hover) and (pointer: fine) {
+    .lightbox-btn:hover {
+        background: rgba(206, 0, 51, 0.9);
+        transform: translateY(-50%) scale(1.08);
+    }
 }
 
 .lightbox-prev {
@@ -2518,12 +2527,47 @@ body {
 
 @media (max-width: 768px) {
     .portfolio-hero-section {
-        padding: 50px 0 60px 0;
+        padding: 40px 0 50px 0;
     }
 
+    /* 1. Breadcrumb Navigation Tree - Compact Single-Line Display */
+    .portfolio-breadcrumb {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 6px !important;
+        font-size: 11px !important;
+        line-height: 14px !important;
+        letter-spacing: 0.05em !important;
+        white-space: nowrap !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        scrollbar-width: none !important;
+        margin-bottom: 20px !important;
+        width: 100% !important;
+    }
+
+    .portfolio-breadcrumb::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .portfolio-breadcrumb .breadcrumb-separator {
+        opacity: 0.55 !important;
+        font-size: 10px !important;
+    }
+
+    /* 2. Hero Title - Prominent Bold Heading that Stands Out */
     .portfolio-hero-title {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 32px !important;
+        line-height: 40px !important;
+        font-weight: 800 !important;
+        letter-spacing: -0.02em !important;
+        color: #FFFFFF !important;
+        text-align: left !important;
+        margin: 0 0 16px 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
     .portfolio-hero-subtitle {
@@ -2555,6 +2599,7 @@ body {
         font-size: 14px;
     }
 
+    /* 3. Les Étapes - Mobile Layout & Neutralized Hover Animation */
     .etapes-main-title {
         font-size: 28px;
         line-height: 36px;
@@ -2567,6 +2612,22 @@ body {
     .timeline-content {
         padding: 20px 18px;
         text-align: left !important;
+    }
+
+    /* Neutralize hover on mobile so elements don't jump or trigger hover effects */
+    .timeline-step:hover .timeline-number {
+        transform: none !important;
+    }
+
+    .timeline-content:hover {
+        transform: none !important;
+        box-shadow: none !important;
+        border-color: #EBEBEB !important;
+    }
+
+    .timeline-step:hover .timeline-img {
+        transform: none !important;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1) !important;
     }
 
     .timeline-step-title {
@@ -2607,9 +2668,59 @@ body {
         right: 10px;
     }
 
+    /* 4. La Galerie Section - Unblocked Heading & Red Underline Directly Below */
+    .portfolio-galerie-section {
+        padding: 45px 0 60px 0 !important;
+    }
+
+    .portfolio-galerie-section .realisations-decorative-header {
+        height: auto !important;
+        min-height: auto !important;
+        margin-bottom: 28px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: relative !important;
+        z-index: 5 !important;
+    }
+
+    .portfolio-galerie-section .decorative-line-box {
+        display: none !important;
+    }
+
+    .portfolio-galerie-section .menuiserie-realisations-title {
+        font-size: 26px !important;
+        line-height: 34px !important;
+        color: #111111 !important;
+        text-align: center !important;
+        padding-bottom: 12px !important;
+        margin: 0 auto !important;
+        display: inline-block !important;
+        position: relative !important;
+        width: auto !important;
+        max-width: 100% !important;
+    }
+
+    .portfolio-galerie-section .menuiserie-realisations-title::after {
+        content: '' !important;
+        display: block !important;
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 60px !important;
+        height: 3.5px !important;
+        background-color: var(--primary) !important;
+        border-radius: 2px !important;
+    }
+
     .galerie-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        position: relative !important;
+        z-index: 1 !important;
+        margin-top: 0 !important;
     }
 
     .galerie-item {
@@ -2617,12 +2728,29 @@ body {
         border-radius: 12px;
     }
 
+    /* 5. Lightbox Modal Navigation - Remove Sticky Red State on Mobile Touch */
     .lightbox-prev {
         left: 10px;
     }
 
     .lightbox-next {
         right: 10px;
+    }
+
+    .lightbox-btn:hover {
+        background: rgba(255, 255, 255, 0.18) !important;
+        transform: translateY(-50%) !important;
+    }
+
+    .lightbox-btn:focus,
+    .lightbox-btn:focus-visible {
+        background: rgba(255, 255, 255, 0.18) !important;
+        outline: none !important;
+    }
+
+    .lightbox-btn:active {
+        background: rgba(206, 0, 51, 0.9) !important;
+        transform: translateY(-50%) scale(0.95) !important;
     }
 }
 
@@ -2981,20 +3109,7 @@ body {
         gap: clamp(16px, 4vw, 100px);
     }
 
-    .partner-logo-legrand {
-        width: 19.24vw;
-        max-height: 4.72vw;
-    }
-
-    .partner-logo-somfy {
-        width: 10.99vw;
-        max-height: 6.66vw;
-    }
-
-    .partner-logo-schneider {
-        width: 18.01vw;
-        max-height: 5.3vw;
-    }
+    /* Removed explicit widths for grid scaling */
 
     /* Services & Facts Responsive */
     .services-section {
@@ -3101,10 +3216,7 @@ body {
         gap: 0.42vw;
     }
 
-    .work-category {
-        font-size: 1.04vw;
-        line-height: 1.81vw;
-    }
+    /* Removed mobile scale-down for work-category to keep it legible */
 
     .work-title {
         font-size: 1.67vw;
@@ -4340,6 +4452,7 @@ body {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -4879,13 +4992,15 @@ body {
 }
 
 .project-tag {
-    font-size: 11.5px;
     font-family: var(--font-heading);
+    font-size: 11.5px;
     font-weight: 700;
     color: var(--primary);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.05em;
+    line-height: 1.35;
     margin-bottom: 8px;
+    display: block;
 }
 
 .project-tag-elec {
@@ -4913,26 +5028,9 @@ body {
         padding: 0 16px;
     }
 
-    .partners-logos {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 32px;
-    }
+    /* Removed flex wrapping to preserve grid */
 
-    .partner-logo-legrand {
-        width: 200px;
-        max-height: 48px;
-    }
-
-    .partner-logo-somfy {
-        width: 110px;
-        max-height: 66px;
-    }
-
-    .partner-logo-schneider {
-        width: 180px;
-        max-height: 52px;
-    }
+    /* Removed explicit widths for grid scaling */
 
     .guarantees-container {
         grid-template-columns: repeat(2, 1fr);
@@ -4950,8 +5048,10 @@ body {
 }
 
 @media (max-width: 768px) {
+
     /* 1. Global Containers & Section Spacing */
-    html, body {
+    html,
+    body {
         overflow-x: clip !important;
         width: 100%;
     }
@@ -5000,7 +5100,6 @@ body {
     .elec-heading,
     .benefits-heading,
     .menuiserie-realisations-title,
-    .portfolio-hero-title,
     .etapes-main-title {
         text-align: center !important;
         font-size: 19px !important;
@@ -5166,7 +5265,7 @@ body {
         background-color: #FFFFFF !important;
         border-radius: 2px !important;
         transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
-                    opacity 0.2s ease !important;
+            opacity 0.2s ease !important;
         transform-origin: center !important;
     }
 
@@ -5221,6 +5320,7 @@ body {
             opacity: 0;
             transform: translateY(-8px);
         }
+
         to {
             opacity: 1;
             transform: translateY(0);
@@ -5353,6 +5453,7 @@ body {
             opacity: 0;
             transform: translateY(-4px);
         }
+
         to {
             opacity: 1;
             transform: translateY(0);
@@ -5447,70 +5548,151 @@ body {
         box-sizing: border-box !important;
     }
 
-    /* 3. Homepage (index.html) Hero */
+    /* 3. Homepage (index.html) Hero - Two Distinct Full-Screen Interactive Sections */
     .hero-section {
-        height: auto !important;
-        min-height: auto !important;
-    }
-
-    .hero-container {
         position: relative !important;
-        aspect-ratio: unset !important;
-        height: auto !important;
-        min-height: auto !important;
-        padding: 44px 20px 50px 20px !important;
-        display: block !important;
+        width: 100% !important;
+        height: calc(100vh - 70px) !important;
+        height: calc(100dvh - 70px) !important;
+        min-height: 520px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+        background-color: #111111 !important;
     }
 
-    .hero-content {
-        position: static !important;
+    .hero-background,
+    .hero-container {
+        display: none !important;
+    }
+
+    .hero-mobile-split {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .hero-mobile-half {
+        position: relative !important;
+        flex: 1 1 50% !important;
+        width: 100% !important;
+        height: 50% !important;
+        display: flex !important;
+        align-items: flex-end !important;
+        justify-content: center !important;
+        text-decoration: none !important;
+        color: #FFFFFF !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+        -webkit-tap-highlight-color: transparent !important;
+    }
+
+    .hero-mobile-menuiserie {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.22) !important;
+    }
+
+    .hero-mobile-bg {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease !important;
+        will-change: transform !important;
+    }
+
+    .hero-mobile-bg-menuiserie {
+        background-image: url('assets/hero-left.png') !important;
+        background-position: center 30% !important;
+    }
+
+    .hero-mobile-bg-electricite {
+        background-image: url('assets/hero-right.png') !important;
+        background-position: center 18% !important;
+    }
+
+    .hero-mobile-overlay {
+        position: absolute !important;
+        inset: 0 !important;
+        background: linear-gradient(180deg,
+                rgba(0, 0, 0, 0.05) 0%,
+                rgba(0, 0, 0, 0.18) 40%,
+                rgba(0, 0, 0, 0.72) 74%,
+                rgba(0, 0, 0, 0.92) 100%) !important;
+        transition: background 0.3s ease !important;
+    }
+
+    .hero-mobile-half:active .hero-mobile-bg {
+        transform: scale(1.04) !important;
+    }
+
+    .hero-mobile-half:active .hero-mobile-overlay {
+        background: linear-gradient(180deg,
+                rgba(0, 0, 0, 0.03) 0%,
+                rgba(0, 0, 0, 0.14) 40%,
+                rgba(0, 0, 0, 0.65) 74%,
+                rgba(0, 0, 0, 0.86) 100%) !important;
+    }
+
+    .hero-mobile-content {
+        position: relative !important;
+        z-index: 2 !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
+        justify-content: flex-end !important;
         text-align: center !important;
-        gap: 20px !important;
+        padding: 16px 18px 24px 18px !important;
         width: 100% !important;
-        height: auto !important;
-        pointer-events: auto !important;
-    }
-
-    .hero-block {
-        position: static !important;
-        width: 100% !important;
-        text-align: center !important;
-        gap: 10px !important;
-    }
-
-    .hero-title {
-        font-size: 30px !important;
-        line-height: 38px !important;
-    }
-
-    .hero-desc {
-        font-size: 14.5px !important;
-        line-height: 22px !important;
         max-width: 440px !important;
-        margin: 0 auto !important;
+        box-sizing: border-box !important;
     }
 
-    .btn-outline {
-        position: static !important;
-        width: 100% !important;
-        max-width: 280px !important;
-        padding: 12px 18px !important;
-        font-size: 15px !important;
-        margin: 0 auto !important;
+    .hero-mobile-title-wrap {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        margin-bottom: 6px !important;
     }
 
-    .btn-primary.btn-center {
-        position: static !important;
-        width: 100% !important;
+    .hero-mobile-title {
+        font-family: var(--font-heading) !important;
+        font-size: clamp(24px, 6.8vw, 30px) !important;
+        line-height: 1.15 !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.02em !important;
+        text-transform: uppercase !important;
+        color: #FFFFFF !important;
+        margin: 0 !important;
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85), 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+    }
+
+    .hero-mobile-arrow {
+        display: inline-block !important;
+        width: 22px !important;
+        height: 22px !important;
+        flex-shrink: 0 !important;
+        color: #FFFFFF !important;
+        filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7)) !important;
+        transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    .hero-mobile-half:active .hero-mobile-arrow {
+        transform: translateX(4px) !important;
+    }
+
+    .hero-mobile-desc {
+        font-family: var(--font-body) !important;
+        font-size: 13.5px !important;
+        line-height: 1.4 !important;
+        font-weight: 400 !important;
+        color: rgba(255, 255, 255, 0.94) !important;
+        margin: 0 !important;
         max-width: 320px !important;
-        padding: 14px 20px !important;
-        font-size: 16px !important;
-        line-height: 24px !important;
-        margin: 8px auto 0 auto !important;
-        order: 5 !important;
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.75) !important;
     }
 
     /* 4. Trust Bar: Compact Infinite Slide */
@@ -5575,7 +5757,7 @@ body {
     }
 
     /* Hide cards 4, 5, 6 on mobile to avoid duplicate long scrolling */
-    .services-grid > .service-card:nth-child(n+4) {
+    .services-grid>.service-card:nth-child(n+4) {
         display: none !important;
     }
 
@@ -5710,39 +5892,9 @@ body {
         white-space: nowrap !important;
     }
 
-    .partners-logos {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-around !important;
-        align-items: center !important;
-        gap: 12px !important;
-        width: 100% !important;
-        max-width: 100% !important;
-    }
+    /* Removed mobile flex overrides to preserve grid */
 
-    .partner-logo-legrand {
-        width: auto !important;
-        max-width: 80px !important;
-        max-height: 20px !important;
-        object-fit: contain !important;
-        filter: grayscale(1) opacity(0.65) !important;
-    }
-
-    .partner-logo-somfy {
-        width: auto !important;
-        max-width: 52px !important;
-        max-height: 26px !important;
-        object-fit: contain !important;
-        filter: grayscale(1) opacity(0.65) !important;
-    }
-
-    .partner-logo-schneider {
-        width: auto !important;
-        max-width: 78px !important;
-        max-height: 22px !important;
-        object-fit: contain !important;
-        filter: grayscale(1) opacity(0.65) !important;
-    }
+    /* Removed explicit mobile filters and widths */
 
     /* 8. Process Section: Compact 2x2 Grid */
     .process-section {
@@ -5833,7 +5985,7 @@ body {
         gap: 16px !important;
     }
 
-    .gr-cards-track > .gr-card:nth-child(n+3) {
+    .gr-cards-track>.gr-card:nth-child(n+3) {
         display: none !important;
     }
 
@@ -6331,7 +6483,7 @@ body {
     }
 
     /* In autres realisations on mobile: hide 3rd card to avoid excess stacking */
-    .portfolio-autres-section .services-grid > .service-card:nth-child(n+3) {
+    .portfolio-autres-section .services-grid>.service-card:nth-child(n+3) {
         display: none !important;
     }
 
@@ -6360,7 +6512,8 @@ body {
 
     .form-input,
     .form-textarea {
-        font-size: 16px !important; /* Prevents auto-zoom in mobile Safari */
+        font-size: 16px !important;
+        /* Prevents auto-zoom in mobile Safari */
         padding: 12px 14px !important;
     }
 
@@ -6460,7 +6613,7 @@ body {
 
     .footer-col-title {
         font-size: 13.5px !important;
-        font-weight: 700 !important;
+        font-weight: 400 !important;
         margin-bottom: 14px !important;
         letter-spacing: 0.04em !important;
     }
@@ -6484,8 +6637,7 @@ body {
     }
 
     .footer-col-social {
-        grid-column: 1 / -1 !important;
-        margin-top: 10px !important;
+        /* Placed in the normal grid flow to align horizontally */
     }
 
     .footer-social-icons {
@@ -6541,13 +6693,14 @@ body {
    Mobile viewports (max-width: 992px) are strictly untouched and preserved.
    ========================================================================== */
 @media (min-width: 993px) {
+
     /* Navbar smooth transition properties */
     .navbar-wrapper {
         transition: background-color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
-                    backdrop-filter 0.18s cubic-bezier(0.16, 1, 0.3, 1),
-                    -webkit-backdrop-filter 0.18s cubic-bezier(0.16, 1, 0.3, 1),
-                    box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1),
-                    border-bottom 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+            backdrop-filter 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+            -webkit-backdrop-filter 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+            box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+            border-bottom 0.18s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .nav-link,
@@ -6568,9 +6721,9 @@ body {
         border-radius: 2px;
         pointer-events: none;
         transition: left 0.28s cubic-bezier(0.16, 1, 0.3, 1),
-                    width 0.28s cubic-bezier(0.16, 1, 0.3, 1),
-                    background-color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
-                    opacity 0.2s ease;
+            width 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+            background-color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+            opacity 0.2s ease;
         z-index: 10;
         opacity: 0;
     }
@@ -6586,8 +6739,8 @@ body {
 
     .btn-contact {
         transition: background-color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
-                    color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
-                    transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            color 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+            transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     /* Subtle scroll reveal for un-animated elements */
@@ -6595,7 +6748,7 @@ body {
         opacity: 0;
         transform: translateY(22px);
         transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
-                    transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+            transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
         will-change: opacity, transform;
     }
 
@@ -6605,10 +6758,21 @@ body {
     }
 
     /* Staggered delay helpers for grid items */
-    .reveal-delay-1 { transition-delay: 0.08s; }
-    .reveal-delay-2 { transition-delay: 0.16s; }
-    .reveal-delay-3 { transition-delay: 0.24s; }
-    .reveal-delay-4 { transition-delay: 0.32s; }
+    .reveal-delay-1 {
+        transition-delay: 0.08s;
+    }
+
+    .reveal-delay-2 {
+        transition-delay: 0.16s;
+    }
+
+    .reveal-delay-3 {
+        transition-delay: 0.24s;
+    }
+
+    .reveal-delay-4 {
+        transition-delay: 0.32s;
+    }
 
     /* Restore card hover lift animations and instant transitions */
     .service-card:hover,
@@ -6694,7 +6858,12 @@ body {
        Strict Heading Hover Immunity: Headings only have a single appearing
        animation; zero hover movement/animations anywhere on the website.
        ====================================================================== */
-    h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover,
+    h1:hover,
+    h2:hover,
+    h3:hover,
+    h4:hover,
+    h5:hover,
+    h6:hover,
     .section-header:hover,
     .elec-section-header:hover,
     .contact-header:hover,
@@ -6730,6 +6899,7 @@ body {
             opacity: 0;
             transform: translateY(26px);
         }
+
         100% {
             opacity: 1;
             transform: none;
@@ -6740,18 +6910,23 @@ body {
     .hero-section .hero-block.block-left {
         animation: desktopHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
     }
+
     .hero-section .btn-left {
         animation: desktopHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both;
     }
+
     .hero-section .hero-block.block-right {
         animation: desktopHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both;
     }
+
     .hero-section .btn-right {
         animation: desktopHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.28s both;
     }
+
     .hero-section .btn-center {
         animation: desktopHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.34s both;
     }
+
     .guarantees-bar {
         animation: desktopHeroAppear 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.42s both;
     }
@@ -6760,10 +6935,12 @@ body {
     .pergola-hero-left {
         animation: desktopHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
     }
+
     .pergola-hero-right {
         animation: desktopHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both;
     }
-    .pergola-hero-section + .pergola-intro-section .pergola-intro-container {
+
+    .pergola-hero-section+.pergola-intro-section .pergola-intro-container {
         animation: desktopHeroAppear 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.36s both;
     }
 
@@ -6771,15 +6948,19 @@ body {
     .contact-hero-tag {
         animation: desktopHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
     }
+
     .pergola-intro-section .elec-heading {
         animation: desktopHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both;
     }
+
     .contact-hero-desc {
         animation: desktopHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both;
     }
+
     .contact-form-wrapper {
         animation: desktopHeroAppear 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.32s both;
     }
+
     .contact-sidebar-card {
         animation: desktopHeroAppear 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.42s both;
     }
@@ -6788,6 +6969,7 @@ body {
     .apropos-story-content {
         animation: desktopHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.14s both;
     }
+
     .apropos-story-media {
         animation: desktopHeroAppear 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.28s both;
     }
@@ -6796,9 +6978,11 @@ body {
     .portfolio-breadcrumb {
         animation: desktopHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
     }
+
     .portfolio-hero-left {
         animation: desktopHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both;
     }
+
     .portfolio-tech-card {
         animation: desktopHeroAppear 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.30s both;
     }
@@ -6809,12 +6993,13 @@ body {
    Smooth, lightweight appearance animations tailored for mobile viewports.
    ========================================================================== */
 @media (max-width: 992px) {
+
     /* Subtle scroll reveal for un-animated elements on mobile */
     .scroll-reveal {
         opacity: 0;
         transform: translateY(16px);
         transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         will-change: opacity, transform;
     }
 
@@ -6824,7 +7009,12 @@ body {
     }
 
     /* Strict Mobile Heading Hover Immunity */
-    h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover,
+    h1:hover,
+    h2:hover,
+    h3:hover,
+    h4:hover,
+    h5:hover,
+    h6:hover,
     .section-header:hover,
     .elec-section-header:hover,
     .contact-header:hover,
@@ -6841,10 +7031,21 @@ body {
     }
 
     /* Subtle mobile stagger */
-    .reveal-delay-1 { transition-delay: 0.06s; }
-    .reveal-delay-2 { transition-delay: 0.12s; }
-    .reveal-delay-3 { transition-delay: 0.18s; }
-    .reveal-delay-4 { transition-delay: 0.24s; }
+    .reveal-delay-1 {
+        transition-delay: 0.06s;
+    }
+
+    .reveal-delay-2 {
+        transition-delay: 0.12s;
+    }
+
+    .reveal-delay-3 {
+        transition-delay: 0.18s;
+    }
+
+    .reveal-delay-4 {
+        transition-delay: 0.24s;
+    }
 
     /* Hide desktop-only indicator on mobile */
     .nav-indicator-line {
@@ -6859,6 +7060,7 @@ body {
             opacity: 0;
             transform: translateY(18px);
         }
+
         100% {
             opacity: 1;
             transform: none;
@@ -6866,21 +7068,14 @@ body {
     }
 
     /* index.html Mobile Hero */
-    .hero-section .hero-block.block-left {
-        animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+    .hero-mobile-menuiserie {
+        animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
     }
-    .hero-section .btn-left {
-        animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both;
+
+    .hero-mobile-electricite {
+        animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both;
     }
-    .hero-section .hero-block.block-right {
-        animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.14s both;
-    }
-    .hero-section .btn-right {
-        animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both;
-    }
-    .hero-section .btn-center {
-        animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.28s both;
-    }
+
     .guarantees-bar {
         animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
     }
@@ -6889,10 +7084,12 @@ body {
     .pergola-hero-left {
         animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
     }
+
     .pergola-hero-right {
         animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
     }
-    .pergola-hero-section + .pergola-intro-section .pergola-intro-container {
+
+    .pergola-hero-section+.pergola-intro-section .pergola-intro-container {
         animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
     }
 
@@ -6900,15 +7097,19 @@ body {
     .contact-hero-tag {
         animation: mobileHeroAppear 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
     }
+
     .pergola-intro-section .elec-heading {
         animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.14s both;
     }
+
     .contact-hero-desc {
         animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
     }
+
     .contact-form-wrapper {
         animation: mobileHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.28s both;
     }
+
     .contact-sidebar-card {
         animation: mobileHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.36s both;
     }
@@ -6917,6 +7118,7 @@ body {
     .apropos-story-content {
         animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
     }
+
     .apropos-story-media {
         animation: mobileHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both;
     }
@@ -6925,9 +7127,11 @@ body {
     .portfolio-breadcrumb {
         animation: mobileHeroAppear 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
     }
+
     .portfolio-hero-left {
         animation: mobileHeroAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
     }
+
     .portfolio-tech-card {
         animation: mobileHeroAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.26s both;
     }
